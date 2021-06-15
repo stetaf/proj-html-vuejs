@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Merriweather&display=swap);
 /* Variables */
 /* /Variables */
 /* Common */
@@ -10,6 +11,10 @@
 .container {
   max-width: 1100px;
   margin: auto;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
 }
 
 /* /Common */
@@ -43,6 +48,9 @@ header .intro {
 }
 header .intro h1, header .intro p {
   margin-bottom: 20px;
+}
+header .intro h1 {
+  font-size: 65px;
 }
 
 header:after {
