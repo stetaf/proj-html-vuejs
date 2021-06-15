@@ -241,6 +241,7 @@ main {
 
     .prices { 
         padding: 100px 0;
+        border-bottom: 1px solid rgb(240, 240, 240);
 
         .intro { 
             text-align: center;
@@ -303,6 +304,17 @@ main {
             color: white;
 
             .white_btn { @include white_btn; }
+        }
+    }
+
+    .logos { 
+        height: 200px;
+        
+        & > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
         }
     }
 }

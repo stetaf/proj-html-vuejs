@@ -342,6 +342,7 @@ main .courses .circles i:nth-child(3) {
 }
 main .prices {
   padding: 100px 0;
+  border-bottom: 1px solid #f0f0f0;
 }
 main .prices .intro {
   text-align: center;
@@ -412,6 +413,15 @@ main .prices .buy .white_btn {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
+}
+main .logos {
+  height: 200px;
+}
+main .logos > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 /* /Main */
