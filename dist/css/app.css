@@ -107,9 +107,11 @@ main a {
   text-decoration: none;
 }
 main .cards {
+  margin: 55px 0 100px 0;
+}
+main .cards .container {
   display: flex;
   justify-content: space-between;
-  margin: 55px 0 100px 0;
 }
 main .cards .card {
   background: #f2f8fc;
@@ -144,15 +146,16 @@ main .empowering {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 40px 0;
 }
 main .empowering p {
-  width: 80%;
+  width: 45%;
 }
 main .empowering img {
   width: 500px;
   position: absolute;
   top: 100px;
-  left: 0;
+  left: 25%;
 }
 main .empowering .data {
   display: flex;
@@ -166,6 +169,10 @@ main .empowering .data h2 {
 }
 main .empowering .data span {
   font-weight: bold;
+}
+main .reviews {
+  background: #40c4ff;
+  height: 650px;
 }
 
 /* /Main */

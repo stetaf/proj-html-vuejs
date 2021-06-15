@@ -5,10 +5,13 @@ main {
     a { text-decoration: none; }
 
     .cards { 
-        display: flex;
-        justify-content: space-between;
         margin: 55px 0 100px 0;
         
+        .container { 
+            display: flex;
+            justify-content: space-between;
+        }
+
         .card {
             background: $lighterblue;
             height: 180px;
@@ -41,14 +44,15 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 40px 0;
 
-        p { width: 80%; }
+        p { width: 45%; }
 
         img { 
             width: 500px;
             position: absolute;
             top: 100px;
-            left: 0;
+            left: 25%;
         }
 
         .data { 
@@ -60,5 +64,10 @@ main {
             span { font-weight: bold; }
         }
     } 
+
+    .reviews { 
+        background: $lightblue;
+        height: 650px;
+    }
 }
 /* /Main */
