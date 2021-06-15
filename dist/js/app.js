@@ -57,6 +57,10 @@ var app = new Vue({
       name: 'Advanced',
       price: '88'
     }],
+    mainPost: {
+      title: 'Contemporary Ideas',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil repellat incidunt velit eligendi nam quo voluptate soluta magni. Voluptates esse quos nesciunt alias quod?'
+    },
     scrolled: false
   },
   methods: {
