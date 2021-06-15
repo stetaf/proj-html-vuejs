@@ -1,15 +1,35 @@
 /* Header */
 header { 
-    background-image: url('../img/course-9-f-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 500px;
     width: 100%;
+    position: relative;
 
     nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        text-transform: uppercase;
+        padding: 35px 0;
+        color: white;
+
+        a { 
+            color: white; 
+            text-decoration: none;
+        }
+        i { margin-left: 15px; }
     }
+}
+header:after {
+    content: "";
+    background-image: url('../img/course-9-f-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
 }
 /* /Header */
