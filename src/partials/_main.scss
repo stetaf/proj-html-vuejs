@@ -149,6 +149,29 @@ main {
             }
             li:nth-child(6) { border: unset; }
         }
+
+        .right { 
+            width: calc(100% - 250px);
+            padding: 0px 40px;
+            height: 60%;
+            position: relative;
+
+            h2 { margin-bottom: 25px; }
+            p { margin-bottom: 50px; }
+            li { 
+                list-style: none; 
+                margin: 15px;
+                width: 55%;
+            }
+            i { color: $lightblue; }
+            img { 
+                position: absolute;
+                top: 65%;
+                right: 250px;
+                width: 130px;                
+            }
+            p, li { color: #888080; }
+        }
     }
 }
 /* /Main */

@@ -246,6 +246,35 @@ main .possibilities .left li:nth-child(1) {
 main .possibilities .left li:nth-child(6) {
   border: unset;
 }
+main .possibilities .right {
+  width: calc(100% - 250px);
+  padding: 0px 40px;
+  height: 60%;
+  position: relative;
+}
+main .possibilities .right h2 {
+  margin-bottom: 25px;
+}
+main .possibilities .right p {
+  margin-bottom: 50px;
+}
+main .possibilities .right li {
+  list-style: none;
+  margin: 15px;
+  width: 55%;
+}
+main .possibilities .right i {
+  color: #40c4ff;
+}
+main .possibilities .right img {
+  position: absolute;
+  top: 65%;
+  right: 250px;
+  width: 130px;
+}
+main .possibilities .right p, main .possibilities .right li {
+  color: #888080;
+}
 
 /* /Main */
 /* Footer */
