@@ -122,5 +122,30 @@ main {
         right: 0;
         position: absolute; 
     }
+
+    .possibilities {
+        height: 650px;
+
+        & > div { 
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .left { 
+            width: 250px;
+            border: 1px solid #eeeeee;
+            color: #888080;
+
+            li { 
+                padding: 20px 0 20px 25px;
+                border-bottom: 1px solid #eeeeee;
+                list-style: none;
+            }
+
+            li:nth-child(1) { color: $lightblue; }
+            li:nth-child(6) { border: unset; }
+        }
+    }
 }
 /* /Main */
