@@ -290,6 +290,7 @@ main .courses > p {
 main .courses .course_cards {
   display: flex;
   justify-content: space-between;
+  padding-top: 100px;
 }
 main .courses .course_cards > div {
   width: calc((100% - 100px) / 3);
@@ -322,6 +323,15 @@ main .courses .course_cards .meta {
 }
 main .courses .course_cards .meta span {
   margin-right: 10px;
+}
+main .courses .circles {
+  color: #40c4ff;
+  font-size: 14px;
+}
+main .courses .circles i:nth-child(1),
+main .courses .circles i:nth-child(3) {
+  opacity: 0.5;
+  margin: 30px 10px;
 }
 
 /* /Main */
