@@ -138,12 +138,15 @@ main {
             color: #888080;
 
             li { 
-                padding: 20px 0 20px 25px;
+                padding: 25px 0 25px 25px;
                 border-bottom: 1px solid #eeeeee;
                 list-style: none;
             }
 
-            li:nth-child(1) { color: $lightblue; }
+            li:nth-child(1) { 
+                color: $lightblue; 
+                border-left: 5px solid $lightblue;
+            }
             li:nth-child(6) { border: unset; }
         }
     }
