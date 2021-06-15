@@ -126,13 +126,33 @@ main .cards .card img {
 main .cards .card h4 {
   margin-top: 25px;
 }
-main .tutoring h2, main .tutoring p {
+main .tutoring h2, main .tutoring p,
+main .empowering h2,
+main .empowering p {
   margin-bottom: 25px;
 }
-main .tutoring a {
+main .tutoring a,
+main .empowering a {
   text-transform: uppercase;
   color: #40c4ff;
   font-weight: bold;
+}
+main .empowering {
+  height: 500px;
+  position: relative;
+  padding-left: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .empowering p {
+  width: 80%;
+}
+main .empowering img {
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 0;
 }
 
 /* /Main */
