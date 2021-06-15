@@ -3,4 +3,12 @@
 
 $lightblue: #40c4ff;
 
+@mixin blue_btn {
+    padding: 17px 40px;
+    background: $lightblue;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 /* /Variables */
