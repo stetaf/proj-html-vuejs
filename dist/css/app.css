@@ -294,12 +294,34 @@ main .courses .course_cards {
 main .courses .course_cards > div {
   width: calc((100% - 100px) / 3);
   text-align: left;
+  border: 1px solid #efefef;
+}
+main .courses .course_cards > div h5 {
+  font-size: 16px;
+}
+main .courses .course_cards > div h5, main .courses .course_cards > div h6, main .courses .course_cards > div p {
+  padding: 0 15px;
+}
+main .courses .course_cards > div h6 {
+  margin-bottom: 15px;
+  color: lightgray;
+  font-size: 13px;
 }
 main .courses .course_cards img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 15px;
+}
+main .courses .course_cards .meta {
+  color: lightgray;
+  text-transform: uppercase;
+  padding: 25px 15px;
+  font-size: 14px;
+}
+main .courses .course_cards .meta span {
+  margin-right: 10px;
 }
 
 /* /Main */
