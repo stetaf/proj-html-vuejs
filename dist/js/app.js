@@ -29,9 +29,25 @@ var app = new Vue({
     }, {
       value: 'Elements',
       url: '#'
-    }]
+    }],
+    scrolled: false
   },
-  methods: {}
+  methods: {
+    scrollUp: function scrollUp() {
+      window.scrollTo(0, 0);
+    }
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 400) {
+        _this.scrolled = true;
+      } else if (window.scrollY < 400) {
+        _this.scrolled = false;
+      }
+    });
+  }
 });
 
 /***/ }),

@@ -29,8 +29,20 @@ const app = new Vue({
                 url: '#'
             }
         ],
+        scrolled: false
     },
     methods: {
-
+        scrollUp() {
+            window.scrollTo(0, 0);
+        }
+    },
+    mounted: function() {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 400) {
+                this.scrolled = true;
+            } else if (window.scrollY < 400) {
+                this.scrolled = false;
+            }
+        })
     }
 });
