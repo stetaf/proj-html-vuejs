@@ -16,7 +16,7 @@
         <header>
             <div class="container">
                 <nav>
-                    <a href="#"><img src="./dist/img/logo-light.png" alt="Logo light" width="200"></a>
+                    <a href="#"><img :src="siteLogo" alt="Logo light" width="200"></a>
                     <a v-for="link in mainLinks" :href=link.url>{{ link.value }}</a>
                     <div class="icons">
                         <i class="fas fa-search"></i>

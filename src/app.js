@@ -3,6 +3,7 @@
 const app = new Vue({
     el: '#app',
     data: {
+        siteLogo: './dist/img/logo-light.png',
         mainLinks: [
             {
                 value: 'Home',
