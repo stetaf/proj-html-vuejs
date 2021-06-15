@@ -51,6 +51,20 @@ const app = new Vue({
                 url: '#'
             }
         ],
+        packages: [
+            {
+                name: 'Standard',
+                price: '12'
+            },
+            {
+                name: 'Professional',
+                price: '59'
+            },
+            {
+                name: 'Advanced',
+                price: '88'
+            }
+        ],
         scrolled: false
     },
     methods: {

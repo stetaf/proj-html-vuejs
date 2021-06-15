@@ -46,6 +46,16 @@ var app = new Vue({
       value: 'Events',
       url: '#'
     }],
+    packages: [{
+      name: 'Standard',
+      price: '12'
+    }, {
+      name: 'Professional',
+      price: '59'
+    }, {
+      name: 'Advanced',
+      price: '88'
+    }],
     scrolled: false
   },
   methods: {
