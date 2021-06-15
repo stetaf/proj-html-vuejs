@@ -7,8 +7,26 @@
   padding: 0;
 }
 
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
 /* /Common */
 /* Header */
+header {
+  background-image: url("../img/course-9-f-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* /Header */
 /* Main */
 /* /Main */
