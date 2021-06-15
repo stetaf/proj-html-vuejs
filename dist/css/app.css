@@ -171,8 +171,33 @@ main .empowering .data span {
   font-weight: bold;
 }
 main .reviews {
+  color: white;
   background: #40c4ff;
-  height: 650px;
+  height: 530px;
+  padding: 90px 0;
+}
+main .reviews > div, main .reviews > div > div {
+  height: 100%;
+}
+main .reviews > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .reviews > div > div p {
+  width: 75%;
+  text-align: center;
+}
+main .reviews > div > div .person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .reviews > div > div .circles > i:nth-child(1), main .reviews > div > div .circles > i:nth-child(3) {
+  opacity: 0.5;
+  margin: 0 10px;
 }
 
 /* /Main */

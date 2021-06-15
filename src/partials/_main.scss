@@ -66,8 +66,38 @@ main {
     } 
 
     .reviews { 
+        color: white;
         background: $lightblue;
-        height: 650px;
+        height: 530px;
+        padding: 90px 0;
+
+        & > div,
+        &> div > div { height: 100%; }
+
+        &> div > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+            p { 
+                width: 75%; 
+                text-align: center;
+            }
+            .person { 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .circles { 
+                & > i:nth-child(1),
+                & > i:nth-child(3) { 
+                    opacity: 0.5;
+                    margin: 0 10px;
+                }
+            }
+        }
     }
 }
 /* /Main */
