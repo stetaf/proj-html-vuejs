@@ -9,41 +9,41 @@ footer {
         justify-content: space-between;
         padding-bottom: 50px;
         border-bottom: 1px solid $lightgray;
+       
+        .iacademy { 
+            display: flex;
+            flex-direction: column;
+            width: calc(100% / 4);
+    
+            img { margin-bottom: 35px; }
+            
+            .contacts { 
+                display: flex;
+                flex-direction: column; 
+                color: white;
+    
+                span { margin-top: 25px; }
+            }
+        }
+    
+        .popular { 
+            div { margin-bottom: 20px; }
+    
+            span { font-size: 14px; }
+        }
+    
+        .support { 
+            li { margin-bottom: 13px; }
+        }
+    
+        .flexible { 
+            img { width: 200px; }
+        }    
     }
 
     h2 { 
         color: white; 
         margin-bottom: 35px;
-    }
-
-    .iacademy { 
-        display: flex;
-        flex-direction: column;
-        width: calc(100% / 4);
-
-        img { margin-bottom: 35px; }
-        
-        .contacts { 
-            display: flex;
-            flex-direction: column; 
-            color: white;
-
-            span { margin-top: 25px; }
-        }
-    }
-
-    .popular { 
-        div { margin-bottom: 20px; }
-
-        span { font-size: 14px; }
-    }
-
-    .support { 
-        li { margin-bottom: 13px; }
-    }
-
-    .flexible { 
-        img { width: 200px; }
     }
 }
 /* /Footer */

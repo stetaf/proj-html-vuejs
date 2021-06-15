@@ -441,37 +441,37 @@ footer .upper {
   padding-bottom: 50px;
   border-bottom: 1px solid #c1c1c1;
 }
-footer h2 {
-  color: white;
-  margin-bottom: 35px;
-}
-footer .iacademy {
+footer .upper .iacademy {
   display: flex;
   flex-direction: column;
   width: calc(100% / 4);
 }
-footer .iacademy img {
+footer .upper .iacademy img {
   margin-bottom: 35px;
 }
-footer .iacademy .contacts {
+footer .upper .iacademy .contacts {
   display: flex;
   flex-direction: column;
   color: white;
 }
-footer .iacademy .contacts span {
+footer .upper .iacademy .contacts span {
   margin-top: 25px;
 }
-footer .popular div {
+footer .upper .popular div {
   margin-bottom: 20px;
 }
-footer .popular span {
+footer .upper .popular span {
   font-size: 14px;
 }
-footer .support li {
+footer .upper .support li {
   margin-bottom: 13px;
 }
-footer .flexible img {
+footer .upper .flexible img {
   width: 200px;
+}
+footer h2 {
+  color: white;
+  margin-bottom: 35px;
 }
 
 /* /Footer */
