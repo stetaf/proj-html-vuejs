@@ -11,7 +11,23 @@
     <link rel='stylesheet' href='./dist/css/app.css'>
 </head>
 <body>
-    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav id="app">
+                <img src="./dist/img/logo-light.png" alt="Logo light" width="200">
+                <a v-for="link in links" href="link.url">{{ link.value }}</a>
+                <div class="icons">
+                    <i class="fas fa-search"></i>
+                    <i class="far fa-clipboard"></i>
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- /Header -->
+
+
     <!-- Vue -->
     <script src='https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js'></script>
     <!-- App -->
