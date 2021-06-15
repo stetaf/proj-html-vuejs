@@ -70,6 +70,20 @@ const app = new Vue({
             title: 'Contemporary Ideas',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil repellat incidunt velit eligendi nam quo voluptate soluta magni. Voluptates esse quos nesciunt alias quod?'
         },
+        popularCourses: [
+            {
+                name: 'Business English',
+                author: 'Preston Marshall'
+            },
+            {
+                name: 'Social Computing',
+                author: 'David Sanders'
+            },
+            {
+                name: 'Learn Spanish',
+                author: 'Jennie King'
+            }
+        ],
         scrolled: false
     },
     methods: {

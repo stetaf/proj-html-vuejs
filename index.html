@@ -331,17 +331,9 @@
                     </div>
                     <div class="popular">
                         <h2>Popular Courses</h2>
-                        <div>
-                            <a href="#"><h4>Business English</h4></a>
-                            <span>Preston Marshall</span>
-                        </div>
-                        <div>
-                            <a href="#"><h4>Social Computing</h4></a>
-                            <span>David Sanders</span>
-                        </div>
-                        <div>
-                            <a href="#"><h4>Learn Spanish</h4></a>
-                            <span>Jennie King</span>
+                        <div v-for="course in popularCourses">
+                            <a href="#"><h4>{{ course.name }}</h4></a>
+                            <span>{{ course.author }}</span>
                         </div>
                     </div>
                     <div class="support">
