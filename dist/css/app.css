@@ -435,6 +435,10 @@ footer {
   padding-top: 100px;
   color: #c1c1c1;
 }
+footer h2 {
+  color: white;
+  margin-bottom: 35px;
+}
 footer .upper {
   display: flex;
   justify-content: space-between;
@@ -469,9 +473,10 @@ footer .upper .support li {
 footer .upper .flexible img {
   width: 200px;
 }
-footer h2 {
-  color: white;
-  margin-bottom: 35px;
+footer .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
 }
 
 /* /Footer */

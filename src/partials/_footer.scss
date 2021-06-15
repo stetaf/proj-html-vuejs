@@ -3,6 +3,11 @@ footer {
     background: $darkergray;
     padding-top: 100px;
     color: $lightgray;
+
+    h2 { 
+        color: white; 
+        margin-bottom: 35px;
+    }
     
     .upper { 
         display: flex;
@@ -41,9 +46,12 @@ footer {
         }    
     }
 
-    h2 { 
-        color: white; 
-        margin-bottom: 35px;
+    .bottom { 
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+
+        
     }
 }
 /* /Footer */
