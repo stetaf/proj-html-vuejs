@@ -20,6 +20,19 @@ header {
             margin-left: 15px; 
             font-size: 20px;
         }
+
+        .icons { position: relative; }
+        .icons:after {
+            content: "0";
+            background: #40c4ff;
+            border-radius: 50%;
+            position: absolute;
+            top: -5px;
+            left: 60px;
+            font-size: 10px;
+            padding: 0 5px;
+        
+        }
     }
     .intro {
         display: flex;
