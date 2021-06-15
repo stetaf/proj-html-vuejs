@@ -154,6 +154,19 @@ main .empowering img {
   top: 100px;
   left: 0;
 }
+main .empowering .data {
+  display: flex;
+  color: #40c4ff;
+}
+main .empowering .data > div:nth-child(1) {
+  margin-right: 18%;
+}
+main .empowering .data h2 {
+  margin-bottom: 10px;
+}
+main .empowering .data span {
+  font-weight: bold;
+}
 
 /* /Main */
 /* Footer */
