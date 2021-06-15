@@ -276,6 +276,31 @@ main .possibilities .right img {
 main .possibilities .right p, main .possibilities .right li {
   color: #888080;
 }
+main .courses {
+  padding: 100px 0;
+  text-align: center;
+}
+main .courses h2 {
+  margin-bottom: 20px;
+}
+main .courses > p {
+  width: 85%;
+  margin: auto;
+}
+main .courses .course_cards {
+  display: flex;
+  justify-content: space-between;
+}
+main .courses .course_cards > div {
+  width: calc((100% - 100px) / 3);
+  text-align: left;
+}
+main .courses .course_cards img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 /* /Main */
 /* Footer */
