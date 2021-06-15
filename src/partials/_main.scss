@@ -181,6 +181,7 @@ main {
         text-align: center;
         background-size: 245%;
         background-position: bottom;
+        border-bottom: 1px solid rgb(240, 240, 240);
 
         h2 { margin-bottom: 20px; }
         & > p { 
@@ -236,6 +237,27 @@ main {
                 opacity: 0.5; 
                 margin: 30px 10px;
             }
+        }
+    }
+
+    .prices { 
+        padding: 100px 0;
+        .intro { 
+            text-align: center;
+            margin-bottom: 70px;
+
+            h2 { margin-bottom: 25px; }
+        }
+        table { 
+            width: 100%;
+        }
+
+        td { width: calc(100% / 4);}
+
+        tr > td:nth-child(2),
+        tr > td:nth-child(3),
+        tr > td:nth-child(4) {
+            text-align: center;
         }
     }
 }
