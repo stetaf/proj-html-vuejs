@@ -19,6 +19,10 @@ a {
   color: unset;
 }
 
+li {
+  list-style: none;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "Merriweather", serif !important;
 }
@@ -433,9 +437,11 @@ footer {
 }
 footer > div {
   display: flex;
+  justify-content: space-between;
 }
 footer h2 {
   color: white;
+  margin-bottom: 35px;
 }
 footer .iacademy {
   display: flex;
@@ -443,7 +449,7 @@ footer .iacademy {
   width: calc(100% / 4);
 }
 footer .iacademy img {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 footer .iacademy .contacts {
   display: flex;
@@ -452,6 +458,9 @@ footer .iacademy .contacts {
 }
 footer .iacademy .contacts span {
   margin-top: 25px;
+}
+footer .flexible img {
+  width: 200px;
 }
 
 /* /Footer */

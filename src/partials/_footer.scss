@@ -6,16 +6,20 @@ footer {
     
     & > div { 
         display: flex;
+        justify-content: space-between;
     }
 
-    h2 { color: white; }
+    h2 { 
+        color: white; 
+        margin-bottom: 35px;
+    }
 
     .iacademy { 
         display: flex;
         flex-direction: column;
         width: calc(100% / 4);
 
-        img { margin-bottom: 25px; }
+        img { margin-bottom: 35px; }
         
         .contacts { 
             display: flex;
@@ -24,6 +28,10 @@ footer {
 
             span { margin-top: 25px; }
         }
+    }
+
+    .flexible { 
+        img { width: 200px; }
     }
 }
 /* /Footer */
