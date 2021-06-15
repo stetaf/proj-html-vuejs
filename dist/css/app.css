@@ -67,6 +67,19 @@ header .intro p {
 header .intro > a {
   margin-top: 35px;
 }
+header .circles {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .circles > i:nth-child(1), header .circles > i:nth-child(2) {
+  opacity: 0.5;
+  margin-right: 5px;
+}
+header .circles i {
+  font-size: 18px;
+}
 
 header:after {
   content: "";

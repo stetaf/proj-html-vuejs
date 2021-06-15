@@ -33,6 +33,19 @@ header {
 
         &>a { margin-top: 35px; }
     }
+    .circles {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &> i:nth-child(1),
+        &> i:nth-child(2) {
+            opacity: 0.5;
+            margin-right: 5px;
+        } 
+        i { font-size: 18px; }
+    }
 }
 header:after {
     content: "";
