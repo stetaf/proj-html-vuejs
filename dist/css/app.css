@@ -83,7 +83,7 @@ header .circles {
   transform: translateX(-50%);
 }
 header .circles > i:nth-child(1), header .circles > i:nth-child(2) {
-  opacity: 0.5;
+  opacity: 0.2;
   margin-right: 5px;
 }
 header .circles i {
