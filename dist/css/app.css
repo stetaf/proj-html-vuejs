@@ -223,6 +223,7 @@ main .reviews:after {
 }
 main .possibilities {
   height: 650px;
+  border-bottom: 1px solid #f0f0f0;
 }
 main .possibilities > div {
   display: flex;

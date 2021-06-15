@@ -125,6 +125,7 @@ main {
 
     .possibilities {
         height: 650px;
+        border-bottom: 1px solid rgb(240, 240, 240);
 
         & > div { 
             display: flex;
