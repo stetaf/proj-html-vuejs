@@ -16,7 +16,10 @@ header {
         text-transform: uppercase;
         padding: 35px 0;
 
-        i { margin-left: 15px; }
+        i { 
+            margin-left: 15px; 
+            font-size: 20px;
+        }
     }
     .intro {
         display: flex;
