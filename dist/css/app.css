@@ -172,9 +172,10 @@ main .empowering .data span {
 }
 main .reviews {
   color: white;
-  background: #40c4ff;
-  height: 530px;
-  padding: 90px 0;
+  background: #3baee2;
+  height: 600px;
+  padding: 105px 0;
+  position: relative;
 }
 main .reviews > div, main .reviews > div > div {
   height: 100%;
@@ -188,6 +189,7 @@ main .reviews > div > div {
 main .reviews > div > div p {
   width: 75%;
   text-align: center;
+  line-height: 30px;
 }
 main .reviews > div > div .person {
   display: flex;
@@ -195,9 +197,29 @@ main .reviews > div > div .person {
   justify-content: center;
   align-items: center;
 }
+main .reviews > div > div .person h4 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+main .reviews > div > div .person span {
+  text-transform: uppercase;
+  font-size: 14px;
+}
 main .reviews > div > div .circles > i:nth-child(1), main .reviews > div > div .circles > i:nth-child(3) {
   opacity: 0.5;
   margin: 0 10px;
+}
+main .reviews:after {
+  content: "";
+  background-image: url("../img/interactive-map-slider-img-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(10);
+  top: 200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
 }
 
 /* /Main */

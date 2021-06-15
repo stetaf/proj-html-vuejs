@@ -67,9 +67,10 @@ main {
 
     .reviews { 
         color: white;
-        background: $lightblue;
-        height: 530px;
-        padding: 90px 0;
+        background: $lightblue2;
+        height: 600px;
+        padding: 105px 0;
+        position: relative;
 
         & > div,
         &> div > div { height: 100%; }
@@ -83,12 +84,22 @@ main {
             p { 
                 width: 75%; 
                 text-align: center;
+                line-height: 30px;
             }
             .person { 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                h4 { 
+                    font-size: 21px; 
+                    margin-bottom: 10px;
+                }
+                span { 
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
             }
             .circles { 
                 & > i:nth-child(1),
@@ -98,6 +109,18 @@ main {
                 }
             }
         }
+    }
+    .reviews:after {
+        content: "";
+        background-image: url('../img/interactive-map-slider-img-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(10);
+        top: 200px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute; 
     }
 }
 /* /Main */
