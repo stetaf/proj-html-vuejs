@@ -3,20 +3,29 @@ header {
     height: 500px;
     width: 100%;
     position: relative;
-
+    color: white;
+    
+    a { 
+        color: white; 
+        text-decoration: none;
+    }
     nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
         text-transform: uppercase;
         padding: 35px 0;
-        color: white;
 
-        a { 
-            color: white; 
-            text-decoration: none;
-        }
         i { margin-left: 15px; }
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 250px;    
+        
+        h1, p { margin-bottom: 20px; }
     }
 }
 header:after {

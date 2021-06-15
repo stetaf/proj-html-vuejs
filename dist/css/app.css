@@ -18,6 +18,11 @@ header {
   height: 500px;
   width: 100%;
   position: relative;
+  color: white;
+}
+header a {
+  color: white;
+  text-decoration: none;
 }
 header nav {
   display: flex;
@@ -25,14 +30,19 @@ header nav {
   justify-content: space-between;
   text-transform: uppercase;
   padding: 35px 0;
-  color: white;
-}
-header nav a {
-  color: white;
-  text-decoration: none;
 }
 header nav i {
   margin-left: 15px;
+}
+header .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+header .intro h1, header .intro p {
+  margin-bottom: 20px;
 }
 
 header:after {
