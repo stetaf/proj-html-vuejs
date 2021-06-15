@@ -11,7 +11,7 @@
 var app = new Vue({
   el: '#app',
   data: {
-    links: [{
+    mainLinks: [{
       value: 'Home',
       url: '#'
     }, {
@@ -28,6 +28,22 @@ var app = new Vue({
       url: '#'
     }, {
       value: 'Elements',
+      url: '#'
+    }],
+    supportLinks: [{
+      value: 'User dashboard',
+      url: '#'
+    }, {
+      value: 'Contact Us',
+      url: '#'
+    }, {
+      value: 'FAQ',
+      url: '#'
+    }, {
+      value: 'Course Offer',
+      url: '#'
+    }, {
+      value: 'Events',
       url: '#'
     }],
     scrolled: false
