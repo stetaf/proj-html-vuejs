@@ -14,7 +14,7 @@
   margin: auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Merriweather", serif !important;
 }
 
@@ -97,6 +97,27 @@ header:after {
 
 /* /Header */
 /* Main */
+main .cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 55px 0 100px 0;
+}
+main .cards .card {
+  background: #f2f8fc;
+  height: 180px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .cards .card img {
+  width: 70px;
+}
+main .cards .card h4 {
+  margin-top: 25px;
+}
+
 /* /Main */
 /* Footer */
 /* /Footer */
