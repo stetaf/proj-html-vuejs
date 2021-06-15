@@ -426,4 +426,32 @@ main .logos > div {
 
 /* /Main */
 /* Footer */
+footer {
+  background: #222222;
+  padding-top: 100px;
+  color: #c1c1c1;
+}
+footer > div {
+  display: flex;
+}
+footer h2 {
+  color: white;
+}
+footer .iacademy {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 4);
+}
+footer .iacademy img {
+  margin-bottom: 25px;
+}
+footer .iacademy .contacts {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+footer .iacademy .contacts span {
+  margin-top: 25px;
+}
+
 /* /Footer */

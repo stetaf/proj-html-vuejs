@@ -1,3 +1,29 @@
 /* Footer */
+footer { 
+    background: $darkergray;
+    padding-top: 100px;
+    color: $lightgray;
+    
+    & > div { 
+        display: flex;
+    }
 
+    h2 { color: white; }
+
+    .iacademy { 
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 4);
+
+        img { margin-bottom: 25px; }
+        
+        .contacts { 
+            display: flex;
+            flex-direction: column; 
+            color: white;
+
+            span { margin-top: 25px; }
+        }
+    }
+}
 /* /Footer */
