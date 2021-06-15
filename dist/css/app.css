@@ -97,6 +97,15 @@ header:after {
 
 /* /Header */
 /* Main */
+main {
+  color: #303030;
+}
+main h2 {
+  font-size: 40px;
+}
+main a {
+  text-decoration: none;
+}
 main .cards {
   display: flex;
   justify-content: space-between;
@@ -116,6 +125,14 @@ main .cards .card img {
 }
 main .cards .card h4 {
   margin-top: 25px;
+}
+main .tutoring h2, main .tutoring p {
+  margin-bottom: 25px;
+}
+main .tutoring a {
+  text-transform: uppercase;
+  color: #40c4ff;
+  font-weight: bold;
 }
 
 /* /Main */
