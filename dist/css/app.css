@@ -14,6 +14,11 @@
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "Merriweather", serif !important;
 }
@@ -102,9 +107,6 @@ main {
 }
 main h2 {
   font-size: 40px;
-}
-main a {
-  text-decoration: none;
 }
 main .cards {
   margin: 55px 0 100px 0;
@@ -350,14 +352,66 @@ main .prices .intro h2 {
 }
 main .prices table {
   width: 100%;
+  border-collapse: collapse;
+  border-top: 5px solid #d6f2ff;
+}
+main .prices table thead td {
+  color: #303030;
+}
+main .prices table thead > tr td:nth-child(3) {
+  border-top: 5px solid #40c4ff;
+}
+main .prices table thead > tr td:nth-child(2),
+main .prices table thead > tr td:nth-child(3),
+main .prices table thead > tr td:nth-child(4) {
+  background: #f7fdff;
+}
+main .prices table thead > tr td:nth-child(2) img, main .prices table thead > tr td:nth-child(2) h3,
+main .prices table thead > tr td:nth-child(3) img,
+main .prices table thead > tr td:nth-child(3) h3,
+main .prices table thead > tr td:nth-child(4) img,
+main .prices table thead > tr td:nth-child(4) h3 {
+  margin: 20px;
 }
 main .prices td {
   width: calc(100% / 4);
+  border: 1px solid #eeeeee;
+  padding: 15px;
+  font-size: 20px;
+  color: #808080;
+}
+main .prices td .fa-check {
+  color: #40c4ff;
+}
+main .prices td .blue_btn {
+  vertical-align: 2px;
+  color: white;
 }
 main .prices tr > td:nth-child(2),
 main .prices tr > td:nth-child(3),
 main .prices tr > td:nth-child(4) {
   text-align: center;
+}
+main .prices .buy {
+  height: 85px;
+  color: white;
+}
+main .prices .buy td:nth-child(2),
+main .prices .buy td:nth-child(3),
+main .prices .buy td:nth-child(4) {
+  background: #f7fdff;
+}
+main .prices .buy td:nth-child(1) {
+  border-left: unset;
+  border-bottom: unset;
+}
+main .prices .buy .white_btn {
+  padding: 17px 40px;
+  background: white;
+  border: 3px solid #eeeeee;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* /Main */

@@ -2,7 +2,6 @@
 main {
     color: $darkgray;
     h2 { font-size: 40px; }
-    a { text-decoration: none; }
 
     .cards { 
         margin: 55px 0 100px 0;
@@ -242,6 +241,7 @@ main {
 
     .prices { 
         padding: 100px 0;
+
         .intro { 
             text-align: center;
             margin-bottom: 70px;
@@ -250,14 +250,59 @@ main {
         }
         table { 
             width: 100%;
+            border-collapse: collapse;
+            border-top: 5px solid #d6f2ff;
+            
+            thead td { color: #303030; }
+
+            thead > tr td:nth-child(3) { border-top: 5px solid $lightblue; }
+
+            thead > tr td:nth-child(2),
+            thead > tr td:nth-child(3),
+            thead > tr td:nth-child(4) { 
+                background: #f7fdff; 
+                img, h3 { margin: 20px;}
+            }
         }
 
-        td { width: calc(100% / 4);}
+        td { 
+            width: calc(100% / 4);
+            border: 1px solid #eeeeee;
+            padding: 15px;
+            font-size: 20px;
+
+            .fa-check { color: $lightblue; }
+
+            .blue_btn { 
+                vertical-align: 2px;
+                color: white;
+            }
+
+            color: #808080;
+        }
 
         tr > td:nth-child(2),
         tr > td:nth-child(3),
         tr > td:nth-child(4) {
             text-align: center;
+        }
+
+        .buy { 
+            height: 85px; 
+            td:nth-child(2),
+            td:nth-child(3),
+            td:nth-child(4) {
+                background: #f7fdff;
+            }
+
+            td:nth-child(1) { 
+                border-left: unset;
+                border-bottom: unset;
+             }
+
+            color: white;
+
+            .white_btn { @include white_btn; }
         }
     }
 }
