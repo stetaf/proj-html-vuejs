@@ -4,9 +4,11 @@ footer {
     padding-top: 100px;
     color: $lightgray;
     
-    & > div { 
+    .upper { 
         display: flex;
         justify-content: space-between;
+        padding-bottom: 50px;
+        border-bottom: 1px solid $lightgray;
     }
 
     h2 { 

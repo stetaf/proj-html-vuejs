@@ -435,9 +435,11 @@ footer {
   padding-top: 100px;
   color: #c1c1c1;
 }
-footer > div {
+footer .upper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #c1c1c1;
 }
 footer h2 {
   color: white;
