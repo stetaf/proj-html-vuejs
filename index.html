@@ -11,109 +11,194 @@
     <link rel='stylesheet' href='./dist/css/app.css'>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav id="app">
-                <a href="#"><img src="./dist/img/logo-light.png" alt="Logo light" width="200"></a>
-                <a v-for="link in links" :href=link.url>{{ link.value }}</a>
-                <div class="icons">
-                    <i class="fas fa-search"></i>
-                    <i class="far fa-clipboard"></i>
-                    <i class="fas fa-bars"></i>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav>
+                    <a href="#"><img src="./dist/img/logo-light.png" alt="Logo light" width="200"></a>
+                    <a v-for="link in links" :href=link.url>{{ link.value }}</a>
+                    <div class="icons">
+                        <i class="fas fa-search"></i>
+                        <i class="far fa-clipboard"></i>
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="scroll_up" @click="scrollUp()" v-show="scrolled == true">
+                        <i class="fas fa-chevron-up"></i>
+                        <span>TOP</span>
+                    </div>        
+                </nav>
+                <div class="intro">
+                    <h1>Contemporary Ideas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil repellat incidunt velit eligendi nam quo voluptate soluta magni. Voluptates esse quos nesciunt alias quod?</p>
+                    <a href="#"><span class="blue_btn">Register now</span></a>
                 </div>
-                <div class="scroll_up" @click="scrollUp()">
-                    <i class="fas fa-chevron-up"></i>
-                    <span>TOP</span>
-                </div>        
-            </nav>
-            <div class="intro">
-                <h1>Contemporary Ideas</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil repellat incidunt velit eligendi nam quo voluptate soluta magni. Voluptates esse quos nesciunt alias quod?</p>
-                <a href="#"><span class="blue_btn">Register now</span></a>
+                <div class="circles">
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="far fa-dot-circle"></i>
+                </div>
             </div>
-            <div class="circles">
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="far fa-dot-circle"></i>
+        </header>
+        <!-- /Header -->
+        
+        <!-- Main -->
+        <main>
+            <!-- Cards -->
+            <div class="cards">
+                <div class="container">
+                    <div class="card">
+                        <img src="./dist/img/h5-custom-icon-1.png" alt="World">
+                        <h4>Languages</h4>
+                    </div>
+                    <div class="card">
+                        <img src="./dist/img/h5-custom-icon-2.png" alt="Pen">
+                        <h4>Software</h4>
+                    </div>
+                    <div class="card">
+                        <img src="./dist/img/h5-custom-icon-3.png" alt="Business bag">
+                        <h4>Business</h4>
+                    </div>
+                    <div class="card">
+                        <img src="./dist/img/h5-custom-icon-4.png" alt="Chemistry">
+                        <h4>Chemistry</h4>
+                    </div>
+                    <div class="card">
+                        <img src="./dist/img/h5-custom-icon-5.png" alt="Rocket">
+                        <h4>Science</h4>
+                    </div>
+                    <div class="card">
+                        <img src="./dist/img/h5-custom-icon-6.png" alt="Scissors">
+                        <h4>DIY&Craft</h4>
+                    </div>
+                </div>
             </div>
-        </div>
-    </header>
-    <!-- /Header -->
+            <!-- /Cards -->
     
-    <!-- Main -->
-    <main>
-        <!-- Cards -->
-        <div class="cards">
-            <div class="container">
-                <div class="card">
-                    <img src="./dist/img/h5-custom-icon-1.png" alt="World">
-                    <h4>Languages</h4>
+            <!-- Tutoring -->
+            <section class="tutoring">
+                <div class="container">
+                    <h2>The Trusted Name <br> for In-Home Tutoring</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquid cupiditate necessitatibus modi fuga eos odit quod adipisci voluptatibus non laboriosam, corporis magni quas nemo doloremque blanditiis id ab rerum?</p>
+                    <a href="#">Learn more</a>
+                    <img src="./dist/img/h5-img-1.jpg" alt="Students looking up">
                 </div>
-                <div class="card">
-                    <img src="./dist/img/h5-custom-icon-2.png" alt="Pen">
-                    <h4>Software</h4>
-                </div>
-                <div class="card">
-                    <img src="./dist/img/h5-custom-icon-3.png" alt="Business bag">
-                    <h4>Business</h4>
-                </div>
-                <div class="card">
-                    <img src="./dist/img/h5-custom-icon-4.png" alt="Chemistry">
-                    <h4>Chemistry</h4>
-                </div>
-                <div class="card">
-                    <img src="./dist/img/h5-custom-icon-5.png" alt="Rocket">
-                    <h4>Science</h4>
-                </div>
-                <div class="card">
-                    <img src="./dist/img/h5-custom-icon-6.png" alt="Scissors">
-                    <h4>DIY&Craft</h4>
-                </div>
-            </div>
-        </div>
-        <!-- /Cards -->
-
-        <!-- Tutoring -->
-        <section class="tutoring">
-            <div class="container">
-                <h2>The Trusted Name <br> for In-Home Tutoring</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquid cupiditate necessitatibus modi fuga eos odit quod adipisci voluptatibus non laboriosam, corporis magni quas nemo doloremque blanditiis id ab rerum?</p>
-                <a href="#">Learn more</a>
-                <img src="./dist/img/h5-img-1.jpg" alt="Students looking up">
-            </div>
-        </section>
-        <!-- /Tutoring -->
-
-        <!-- Empowering -->
-        <section class="empowering">
-            <div class="container">
-                <h2>Empowering <br> Children to Reach <br> Their Potential.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dicta beatae, corrupti sit officia minus quasi veritatis, voluptatibus quia quis incidunt architecto deleniti quas tempora perspiciatis accusamus fugiat. Neque, voluptatibus?</p>
-                <div class="data">
-                    <div>
-                        <h2>168</h2>
-                        <span>User Stories</span>
+            </section>
+            <!-- /Tutoring -->
+    
+            <!-- Empowering -->
+            <section class="empowering">
+                <div class="container">
+                    <h2>Empowering <br> Children to Reach <br> Their Potential.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dicta beatae, corrupti sit officia minus quasi veritatis, voluptatibus quia quis incidunt architecto deleniti quas tempora perspiciatis accusamus fugiat. Neque, voluptatibus?</p>
+                    <div class="data">
+                        <div>
+                            <h2>168</h2>
+                            <span>User Stories</span>
+                        </div>
+                        <div>
+                            <h2>347</h2>
+                            <span>Events</span>
+                        </div>
                     </div>
+                    <img src="./dist/img/h5-img-2.jpg" alt="">
+                </div>
+            </section>
+            <!-- /Empowering -->
+    
+            <!-- Reviews -->
+            <section class="reviews">
+                <div class="container">
                     <div>
-                        <h2>347</h2>
-                        <span>Events</span>
+                        <img src="./dist/img/testimonials-standard-2.png" alt="Testimonial image">
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis earum iusto iure cum tenetur aspernatur quod dolorem nesciunt consectetur. In consequatur ratione cum praesentium quidem nesciunt minus aperiam reprehenderit porro laboriosam! Ut voluptatem sequi atque."</p>
+                        <div class="person">
+                            <h4>Joan Collins</h4>
+                            <span>Student</span>
+                        </div>
+                        <div class="circles">
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                        </div>
                     </div>
                 </div>
-                <img src="./dist/img/h5-img-2.jpg" alt="">
-            </div>
-        </section>
-        <!-- /Empowering -->
-
-        <!-- Reviews -->
-        <section class="reviews">
-            <div class="container">
-                <div>
-                    <img src="./dist/img/testimonials-standard-2.png" alt="Testimonial image">
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis earum iusto iure cum tenetur aspernatur quod dolorem nesciunt consectetur. In consequatur ratione cum praesentium quidem nesciunt minus aperiam reprehenderit porro laboriosam! Ut voluptatem sequi atque."</p>
-                    <div class="person">
-                        <h4>Joan Collins</h4>
-                        <span>Student</span>
+            </section>
+            <!-- /Reviews -->
+    
+            <!-- Possibilities -->
+            <section class="possibilities">
+                <div class="container">
+                    <div class="left">
+                        <ul>
+                            <li><h5>What We Do</h5></li>
+                            <li><h5>Degree Program</h5></li>
+                            <li><h5>Career Achievements</h5></li>
+                            <li><h5>Personal Management</h5></li>
+                            <li><h5>Steps To Success</h5></li>
+                            <li><h5>Knowledge Transfer</h5></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h2>Learning Possibilities</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti sunt at placeat accusamus ipsam suscipit delectus ipsum officiis animi harum hic, eum, voluptatem quisquam consequuntur, reiciendis ex ullam. Eum?</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> We enrich lives through learning.</li>
+                            <li><i class="fas fa-check"></i> Maximizing potential through individual attention.</li>
+                            <li><i class="fas fa-check"></i> The trusted name for specialized training</li>
+                            <li>
+                                <i class="fas fa-check"></i> 
+                                People teach. People learn. This is where they connect.
+                            </li>
+                        </ul>
+                        <img src="./dist/img/h12-tabs-icon-1.png" alt="Ruler">
+                    </div>
+                </div>
+            </section>
+            <!-- /Possibilities -->
+    
+            <!-- Courses -->
+            <section class="courses">
+                <div class="container">
+                    <h2>Popular Online Courses</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod exercitationem fugiat eos repudiandae, quisquam recusandae vitae ipsam. Officia, unde. Voluptates?</p>
+                    <div class="course_cards">
+                        <div>
+                            <img src="./dist/img/course-5-f-img.jpg" alt="">
+                            <h5>Android Developer</h5>
+                            <h6>David Sanders</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?</p>
+                            <div class="meta">
+                                <i class="fas fa-user"></i>
+                                <span>1</span>
+                                <i class="fas fa-tag"></i>
+                                <span>Programming</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./dist/img/course-6-f-img.jpg" alt="">
+                            <h5>Web Designing</h5>
+                            <h6>Jennifer Powell</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?</p>
+                            <div class="meta">
+                                <i class="fas fa-user"></i>
+                                <span>1</span>
+                                <i class="fas fa-tag"></i>
+                                <span>Programming</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./dist/img/blog-post-2.jpg" alt="">
+                            <h5>Financial Modeling</h5>
+                            <h6>Edward Bowman</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?</p>
+                            <div class="meta">
+                                <i class="fas fa-user"></i>
+                                <span>1</span>
+                                <i class="fas fa-tag"></i>
+                                <span>Business</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="circles">
                         <i class="fas fa-circle"></i>
@@ -121,259 +206,177 @@
                         <i class="fas fa-circle"></i>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- /Reviews -->
-
-        <!-- Possibilities -->
-        <section class="possibilities">
-            <div class="container">
-                <div class="left">
-                    <ul>
-                        <li><h5>What We Do</h5></li>
-                        <li><h5>Degree Program</h5></li>
-                        <li><h5>Career Achievements</h5></li>
-                        <li><h5>Personal Management</h5></li>
-                        <li><h5>Steps To Success</h5></li>
-                        <li><h5>Knowledge Transfer</h5></li>
-                    </ul>
+            </section>
+            <!-- /Courses -->
+    
+            <!-- Prices -->
+            <section class="prices">
+                <div class="container">
+                    <div class="intro">
+                        <h2>Pricing Plans</h2>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic laboriosam! Perspiciatis deserunt laudantium odio!</span>
+                    </div>
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <td><h3>Save up to 40% by paying weekly</h3></td>
+                                <td>
+                                    <img src="./dist/img/h5-custom-icon-7.png" alt="">
+                                    <h3>Standard</h3>
+                                    <h3>$ 12</h3>
+                                </td>
+                                <td>
+                                    <img src="./dist/img/h5-custom-icon-8.png" alt="">
+                                    <h3>Professional</h3>
+                                    <h3>$ 59</h3>
+                                </td>
+                                <td>
+                                    <img src="./dist/img/h5-custom-icon-9.png" alt="">
+                                    <h3>Advanced</h3>
+                                    <h3>$ 88</h3>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h5>Number of courses</h5></td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td><h5>Time</h5></td>
+                                <td>15 Days</td>
+                                <td>30 Days</td>
+                                <td>30 Days</td>
+                            </tr>
+                            <tr>
+                                <td><h5>Web Designing</h5></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td><h5>Human-centered Design</h5></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td><h5>Basic Marketing</h5></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td><h5>Python for Everybody</h5></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td><h5>Android developer</h5></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td><h5>Business English</h5></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr class="buy">
+                                <td></td>
+                                <td><a href="#"><span class="white_btn">Get it now</span></a></td>
+                                <td><a href="#"><span class="blue_btn">Get it now</span></a></td>
+                                <td><a href="#"><span class="white_btn">Get it now</span></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="right">
-                    <h2>Learning Possibilities</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti sunt at placeat accusamus ipsam suscipit delectus ipsum officiis animi harum hic, eum, voluptatem quisquam consequuntur, reiciendis ex ullam. Eum?</p>
-                    <ul>
-                        <li><i class="fas fa-check"></i> We enrich lives through learning.</li>
-                        <li><i class="fas fa-check"></i> Maximizing potential through individual attention.</li>
-                        <li><i class="fas fa-check"></i> The trusted name for specialized training</li>
-                        <li>
-                            <i class="fas fa-check"></i> 
-                            People teach. People learn. This is where they connect.
-                        </li>
-                    </ul>
-                    <img src="./dist/img/h12-tabs-icon-1.png" alt="Ruler">
+            </section>
+            <!-- Prices -->
+    
+            <!-- Logos -->
+            <section class="logos">
+                <div class="container">
+                    <img src="./dist/img/h5-client-5.png" alt="iAcademy logo">
+                    <img src="./dist/img/h5-client-1.png" alt="Study Central University logo">
+                    <img src="./dist/img/h5-client-2.png" alt="Educator logo">
+                    <img src="./dist/img/h5-client-1.png" alt="Study Central University logo">
                 </div>
-            </div>
-        </section>
-        <!-- /Possibilities -->
-
-        <!-- Courses -->
-        <section class="courses">
+            </section>
+            <!-- /Logos -->
+        </main>
+        <!-- /Main -->
+    
+        <!-- Footer -->
+        <footer>
             <div class="container">
-                <h2>Popular Online Courses</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod exercitationem fugiat eos repudiandae, quisquam recusandae vitae ipsam. Officia, unde. Voluptates?</p>
-                <div class="course_cards">
-                    <div>
-                        <img src="./dist/img/course-5-f-img.jpg" alt="">
-                        <h5>Android Developer</h5>
-                        <h6>David Sanders</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?</p>
-                        <div class="meta">
-                            <i class="fas fa-user"></i>
-                            <span>1</span>
-                            <i class="fas fa-tag"></i>
-                            <span>Programming</span>
+                <div class="upper">
+                    <div class="iacademy">
+                        <img src="./dist/img/logo-light.png" alt="Logo light" width="180">
+                        <p>Providing life changing experiences through education. Class that fit your busy life. Closer to home.</p>
+                        <div class="contacts">
+                            <span class="tel">
+                                <i class="fas fa-phone-volume"></i>
+                                1-677-124-44227
+                            </span>
+                            <span class="time">
+                                <i class="far fa-clock"></i>
+                                Mon - Sat 8.00 - 18.00
+                            </span>
                         </div>
                     </div>
-                    <div>
-                        <img src="./dist/img/course-6-f-img.jpg" alt="">
-                        <h5>Web Designing</h5>
-                        <h6>Jennifer Powell</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?</p>
-                        <div class="meta">
-                            <i class="fas fa-user"></i>
-                            <span>1</span>
-                            <i class="fas fa-tag"></i>
-                            <span>Programming</span>
+                    <div class="popular">
+                        <h2>Popular Courses</h2>
+                        <div>
+                            <a href="#"><h4>Business English</h4></a>
+                            <span>Preston Marshall</span>
+                        </div>
+                        <div>
+                            <a href="#"><h4>Social Computing</h4></a>
+                            <span>David Sanders</span>
+                        </div>
+                        <div>
+                            <a href="#"><h4>Learn Spanish</h4></a>
+                            <span>Jennie King</span>
                         </div>
                     </div>
-                    <div>
-                        <img src="./dist/img/blog-post-2.jpg" alt="">
-                        <h5>Financial Modeling</h5>
-                        <h6>Edward Bowman</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?</p>
-                        <div class="meta">
-                            <i class="fas fa-user"></i>
-                            <span>1</span>
-                            <i class="fas fa-tag"></i>
-                            <span>Business</span>
-                        </div>
+                    <div class="support">
+                        <h2>Support</h2>
+                        <ul>
+                            <li><a href="#">User dashboard</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Course Offer</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="flexible">
+                        <h2>Flexible Learning</h2>
+                        <img src="./dist/img/footer-img-1.png" alt="World map">
                     </div>
                 </div>
-                <div class="circles">
-                    <i class="fas fa-circle"></i>
-                    <i class="fas fa-circle"></i>
-                    <i class="fas fa-circle"></i>
+                <div class="bottom">
+                    <div class="copy">
+                        <span>Copyright 2017 © Mikado Themes</span>
+                    </div>
+                    <div class="socials">
+                        <span>CALL +44 300 303 0266</span>
+                        <span>Follow Us</span>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!-- /Courses -->
+        </footer>
+        <!-- Footer -->
 
-        <!-- Prices -->
-        <section class="prices">
-            <div class="container">
-                <div class="intro">
-                    <h2>Pricing Plans</h2>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic laboriosam! Perspiciatis deserunt laudantium odio!</span>
-                </div>
-                <table border="0" cellspacing="0" cellpadding="0">
-                    <thead>
-                        <tr>
-                            <td><h3>Save up to 40% by paying weekly</h3></td>
-                            <td>
-                                <img src="./dist/img/h5-custom-icon-7.png" alt="">
-                                <h3>Standard</h3>
-                                <h3>$ 12</h3>
-                            </td>
-                            <td>
-                                <img src="./dist/img/h5-custom-icon-8.png" alt="">
-                                <h3>Professional</h3>
-                                <h3>$ 59</h3>
-                            </td>
-                            <td>
-                                <img src="./dist/img/h5-custom-icon-9.png" alt="">
-                                <h3>Advanced</h3>
-                                <h3>$ 88</h3>
-                            </td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><h5>Number of courses</h5></td>
-                            <td>2</td>
-                            <td>4</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <td><h5>Time</h5></td>
-                            <td>15 Days</td>
-                            <td>30 Days</td>
-                            <td>30 Days</td>
-                        </tr>
-                        <tr>
-                            <td><h5>Web Designing</h5></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h5>Human-centered Design</h5></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h5>Basic Marketing</h5></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h5>Python for Everybody</h5></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h5>Android developer</h5></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td><h5>Business English</h5></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-times"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr class="buy">
-                            <td></td>
-                            <td><a href="#"><span class="white_btn">Get it now</span></a></td>
-                            <td><a href="#"><span class="blue_btn">Get it now</span></a></td>
-                            <td><a href="#"><span class="white_btn">Get it now</span></a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <!-- Prices -->
-
-        <!-- Logos -->
-        <section class="logos">
-            <div class="container">
-                <img src="./dist/img/h5-client-5.png" alt="iAcademy logo">
-                <img src="./dist/img/h5-client-1.png" alt="Study Central University logo">
-                <img src="./dist/img/h5-client-2.png" alt="Educator logo">
-                <img src="./dist/img/h5-client-1.png" alt="Study Central University logo">
-            </div>
-        </section>
-        <!-- /Logos -->
-    </main>
-    <!-- /Main -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="upper">
-                <div class="iacademy">
-                    <img src="./dist/img/logo-light.png" alt="Logo light" width="180">
-                    <p>Providing life changing experiences through education. Class that fit your busy life. Closer to home.</p>
-                    <div class="contacts">
-                        <span class="tel">
-                            <i class="fas fa-phone-volume"></i>
-                            1-677-124-44227
-                        </span>
-                        <span class="time">
-                            <i class="far fa-clock"></i>
-                            Mon - Sat 8.00 - 18.00
-                        </span>
-                    </div>
-                </div>
-                <div class="popular">
-                    <h2>Popular Courses</h2>
-                    <div>
-                        <a href="#"><h4>Business English</h4></a>
-                        <span>Preston Marshall</span>
-                    </div>
-                    <div>
-                        <a href="#"><h4>Social Computing</h4></a>
-                        <span>David Sanders</span>
-                    </div>
-                    <div>
-                        <a href="#"><h4>Learn Spanish</h4></a>
-                        <span>Jennie King</span>
-                    </div>
-                </div>
-                <div class="support">
-                    <h2>Support</h2>
-                    <ul>
-                        <li><a href="#">User dashboard</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Course Offer</a></li>
-                        <li><a href="#">Events</a></li>
-                    </ul>
-                </div>
-                <div class="flexible">
-                    <h2>Flexible Learning</h2>
-                    <img src="./dist/img/footer-img-1.png" alt="World map">
-                </div>
-            </div>
-            <div class="bottom">
-                <div class="copy">
-                    <span>Copyright 2017 © Mikado Themes</span>
-                </div>
-                <div class="socials">
-                    <span>CALL +44 300 303 0266</span>
-                    <span>Follow Us</span>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer -->
-
+    </div>
+    
     <!-- Vue -->
     <script src='https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js'></script>
     <!-- App -->
