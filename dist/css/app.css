@@ -277,8 +277,11 @@ main .possibilities .right p, main .possibilities .right li {
   color: #888080;
 }
 main .courses {
+  background: url(../img/background-pattern.jpg);
   padding: 100px 0;
   text-align: center;
+  background-size: 245%;
+  background-position: bottom;
 }
 main .courses h2 {
   margin-bottom: 20px;

@@ -176,8 +176,12 @@ main {
     }
 
     .courses { 
+        background: url(../img/background-pattern.jpg);
         padding: 100px 0;
         text-align: center;
+        background-size: 245%;
+        background-position: bottom;
+
         h2 { margin-bottom: 20px; }
         & > p { 
             width: 85%;
