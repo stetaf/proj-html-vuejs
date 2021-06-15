@@ -462,6 +462,9 @@ footer .iacademy .contacts span {
 footer .popular div {
   margin-bottom: 20px;
 }
+footer .popular span {
+  font-size: 14px;
+}
 footer .support li {
   margin-bottom: 13px;
 }
