@@ -179,6 +179,10 @@ main .empowering a {
   color: #40c4ff;
   font-weight: bold;
 }
+main .tutoring p,
+main .empowering p {
+  color: #595959;
+}
 main .empowering {
   height: 500px;
   position: relative;
