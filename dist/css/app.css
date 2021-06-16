@@ -178,6 +178,7 @@ main .empowering a {
   text-transform: uppercase;
   color: #40c4ff;
   font-weight: bold;
+  letter-spacing: 2.5px;
 }
 main .tutoring p,
 main .empowering p {
