@@ -495,6 +495,9 @@ footer .upper .iacademy .contacts {
 footer .upper .iacademy .contacts span {
   margin-top: 25px;
 }
+footer .upper .iacademy p {
+  text-transform: capitalize;
+}
 footer .upper .popular div {
   margin-bottom: 20px;
 }
