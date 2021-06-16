@@ -32,14 +32,14 @@
                     </div>        
                 </nav>
                 <div class="intro">
-                    <h1>{{ mainPost.title }}</h1>
-                    <p>{{ mainPost.text }}</p>
+                    <h1>{{ introContent.title[introCounter] }}</h1>
+                    <p>{{ introContent.text[introCounter] }}</p>
                     <a href="#"><span class="blue_btn">Register now</span></a>
                 </div>
                 <div class="circles">
-                    <i class="fas fa-circle"></i>
-                    <i class="fas fa-circle"></i>
-                    <i class="far fa-dot-circle"></i>
+                    <i :class="introCounter == 0 ? 'far fa-dot-circle' : 'fas fa-circle'" :style="[introCounter == 0 ? { opacity: 1 } : { opacity: 0.2 }]"></i>
+                    <i :class="introCounter == 1 ? 'far fa-dot-circle' : 'fas fa-circle'" :style="[introCounter == 1 ? { opacity: 1 } : { opacity: 0.2 }]"></i>
+                    <i :class="introCounter == 2 ? 'far fa-dot-circle' : 'fas fa-circle'" :style="[introCounter == 2 ? { opacity: 1 } : { opacity: 0.22 }]"></i>
                 </div>
             </div>
         </header>
