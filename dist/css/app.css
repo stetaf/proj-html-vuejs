@@ -234,9 +234,10 @@ main .reviews > div > div {
   justify-content: space-between;
 }
 main .reviews > div > div p {
-  width: 75%;
+  width: 90%;
   text-align: center;
   line-height: 30px;
+  font-size: 19px;
 }
 main .reviews > div > div .person {
   display: flex;
@@ -244,8 +245,9 @@ main .reviews > div > div .person {
   justify-content: center;
   align-items: center;
 }
-main .reviews > div > div .person h4 {
-  font-size: 21px;
+main .reviews > div > div .person h3 {
+  font-size: 24px;
+  letter-spacing: 1.5px;
   margin-bottom: 10px;
 }
 main .reviews > div > div .person span {
