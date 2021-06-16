@@ -314,9 +314,7 @@
                     <div class="socials">
                         <span>CALL +44 300 303 0266</span>
                         <span>Follow Us</span>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a v-for="social in socialLinks" :href="social.url"><i :class="social.icon"></i></a>
                     </div>
                 </div>
             </div>

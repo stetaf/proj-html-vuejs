@@ -141,6 +141,19 @@ var app = new Vue({
       author: 'Jennie King',
       url: '#'
     }],
+    socialLinks: [{
+      name: 'Twitter',
+      icon: 'fab fa-twitter',
+      url: '#'
+    }, {
+      name: 'Instagram',
+      icon: 'fab fa-instagram',
+      url: '#'
+    }, {
+      name: 'Facebook',
+      icon: 'fab fa-facebook-f',
+      url: '#'
+    }],
     scrolled: false
   },
   methods: {
