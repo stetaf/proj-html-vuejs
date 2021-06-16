@@ -124,10 +124,6 @@ var app = new Vue({
       }],
       img: './dist/img/h5-custom-icon-9.png'
     }],
-    mainPost: {
-      title: 'Contemporary Ideas',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil repellat incidunt velit eligendi nam quo voluptate soluta magni. Voluptates esse quos nesciunt alias quod?'
-    },
     popularCourses: [{
       name: 'Business English',
       author: 'Preston Marshall',
@@ -154,6 +150,12 @@ var app = new Vue({
       icon: 'fab fa-facebook-f',
       url: '#'
     }],
+    introCounter: '0',
+    introContent: {
+      title: ['Contemporary Ideas', 'Trusted In-Home Tutoring', 'Learning Possibilities'],
+      text: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil repellat incidunt velit eligendi nam quo voluptate soluta magni. Voluptates esse quos nesciunt alias quod?', 'Pellentesque arcu augue, pulvinar eget justo vitae, consectetur sodales quam. Mauris eu lorem cursus risus pellentesque maximus. Nulla quis nisl a urna gravida lobortis. Quisque quis magna velit. Proin ut.', 'Sed rhoncus dignissim accumsan. Mauris tristique est eu quam volutpat, sit amet imperdiet arcu efficitur. Praesent tincidunt ullamcorper mauris, eget tincidunt nisl. Ut ex metus, rutrum sed rhoncus sed, cursus.'],
+      images: ["url('../dist/img/course-9-f-img.jpg')", "url('../dist/img/course-10-f-img.jpg')", "url('../dist/img/course-11-f-img.jpg')"]
+    },
     scrolled: false
   },
   methods: {
@@ -174,6 +176,10 @@ var app = new Vue({
         _this.scrolled = false;
       }
     });
+    var introSlider = setInterval(function () {
+      _this.introCounter + 1 > _this.introContent.images.length - 1 ? _this.introCounter = 0 : _this.introCounter++;
+      document.querySelector('header').style.backgroundImage = _this.introContent.images[_this.introCounter];
+    }, 3000);
   }
 });
 
