@@ -223,71 +223,28 @@
                         <thead>
                             <tr>
                                 <td><h3>Save up to 40% by paying weekly</h3></td>
-                                <td>
-                                    <img src="./dist/img/h5-custom-icon-7.png" alt="">
-                                    <h3>{{ packages[0].name }}</h3>
-                                    <h3>$ {{ packages[0].price }}</h3>
-                                </td>
-                                <td>
-                                    <img src="./dist/img/h5-custom-icon-8.png" alt="">
-                                    <h3>{{ packages[1].name }}</h3>
-                                    <h3>$ {{ packages[1].price }}</h3>
-                                </td>
-                                <td>
-                                    <img src="./dist/img/h5-custom-icon-9.png" alt="">
-                                    <h3>{{ packages[2].name }}</h3>
-                                    <h3>$ {{ packages[2].price }}</h3>
+                                <td v-for="package in packages">
+                                    <img :src="package.img" alt="Package image">
+                                    <h3>{{ package.name }}</h3>
+                                    <h3>$ {{ package.price }}</h3>
                                 </td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><h5>Number of courses</h5></td>
-                                <td>2</td>
-                                <td>4</td>
-                                <td>6</td>
+                                <td v-for="package in packages">{{ package.courses }}</td>
                             </tr>
                             <tr>
                                 <td><h5>Time</h5></td>
-                                <td>15 Days</td>
-                                <td>30 Days</td>
-                                <td>30 Days</td>
+                                <td v-for="package in packages">{{ package.time }} Days</td>
                             </tr>
-                            <tr>
-                                <td><h5>Web Designing</h5></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td><h5>Human-centered Design</h5></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td><h5>Basic Marketing</h5></td>
-                                <td><i class="fas fa-times"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td><h5>Python for Everybody</h5></td>
-                                <td><i class="fas fa-times"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td><h5>Android developer</h5></td>
-                                <td><i class="fas fa-times"></i></td>
-                                <td><i class="fas fa-times"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td><h5>Business English</h5></td>
-                                <td><i class="fas fa-times"></i></td>
-                                <td><i class="fas fa-times"></i></td>
-                                <td><i class="fas fa-check"></i></td>
+                            <tr v-for="(product, index) in packages[0].products">
+                                <td><h5>{{ product.name }}</h5></td>
+                                <td v-for="package in packages">
+                                    <i v-if="package.products[index].value == true" class="fas fa-check"></i>
+                                    <i v-else class="fas fa-times"></i>
+                                </td>
                             </tr>
                             <tr class="buy">
                                 <td></td>

@@ -56,15 +56,102 @@ const app = new Vue({
         packages: [
             {
                 name: 'Standard',
-                price: '12'
+                price: '12',
+                courses: '2',
+                time: '15',
+                products: [
+                    {
+                        name: 'Web Designing',
+                        value: true
+                    },
+                    {
+                        name: 'Human-centered Design',
+                        value: true
+                    },
+                    {
+                        name: 'Basic Marketing',
+                        value: false
+                    },
+                    {
+                        name: 'Python for Everybody',
+                        value: false
+                    },
+                    {
+                        name: 'Android developer',
+                        value: false
+                    },
+                    {
+                        name: 'Business English',
+                        value: false
+                    }
+                ],
+                img: './dist/img/h5-custom-icon-7.png'
             },
             {
                 name: 'Professional',
-                price: '59'
+                price: '59',
+                courses: '4',
+                time: '30',
+                products: [
+                    {
+                        name: 'Web Designing',
+                        value: true
+                    },
+                    {
+                        name: 'Human-centered Design',
+                        value: true
+                    },
+                    {
+                        name: 'Basic Marketing',
+                        value: true
+                    },
+                    {
+                        name: 'Python for Everybody',
+                        value: true
+                    },
+                    {
+                        name: 'Android developer',
+                        value: false
+                    },
+                    {
+                        name: 'Business English',
+                        value: false
+                    }
+                ],
+                img: './dist/img/h5-custom-icon-8.png'
             },
             {
                 name: 'Advanced',
-                price: '88'
+                price: '88',
+                courses: '6',
+                time: '30',
+                products: [
+                    {
+                        name: 'Web Designing',
+                        value: true
+                    },
+                    {
+                        name: 'Human-centered Design',
+                        value: true
+                    },
+                    {
+                        name: 'Basic Marketing',
+                        value: true
+                    },
+                    {
+                        name: 'Python for Everybody',
+                        value: true
+                    },
+                    {
+                        name: 'Android developer',
+                        value: true
+                    },
+                    {
+                        name: 'Business English',
+                        value: true
+                    }
+                ],
+                img: './dist/img/h5-custom-icon-9.png'
             }
         ],
         mainPost: {
