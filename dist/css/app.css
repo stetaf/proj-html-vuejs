@@ -211,6 +211,7 @@ main .empowering .data > div:nth-child(1) {
   margin-right: 18%;
 }
 main .empowering .data h2 {
+  font-size: 48px;
   margin-bottom: 10px;
 }
 main .empowering .data span {

@@ -64,7 +64,10 @@ main {
             color: $lightblue;
 
             & > div:nth-child(1) { margin-right: 18%; }
-            h2 { margin-bottom: 10px; }
+            h2 { 
+                font-size: 48px;
+                margin-bottom: 10px; 
+            }
             span { font-weight: bold; }
         }
     } 
