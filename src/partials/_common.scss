@@ -20,6 +20,9 @@ a {
     color: unset;
 }
 
+a:hover { color: $lightblue; }
+
+
 li { list-style: none; }
 
 h1, h2, h3, h4, h5 { font-family: 'Merriweather', serif !important; }

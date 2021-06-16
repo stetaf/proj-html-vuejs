@@ -25,6 +25,10 @@ a {
   color: unset;
 }
 
+a:hover {
+  color: #40c4ff;
+}
+
 li {
   list-style: none;
 }
@@ -120,6 +124,9 @@ header .intro p {
 }
 header .intro > a {
   margin-top: 35px;
+}
+header .intro .blue_btn {
+  color: white;
 }
 header .circles {
   position: absolute;
