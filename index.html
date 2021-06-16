@@ -177,6 +177,10 @@
                                 <i class="fas fa-tag"></i>
                                 <span>{{ course.tag }}</span>
                             </div>
+                            <div class="price" :style="[course.price > 0 ? { background: '#40c4ff' } : { background: '#ffd740' }]">
+                                <span v-if="course.price > 0">${{ course.price }}</span>
+                                <span v-else>FREE</span>
+                            </div>
                         </div>
                     </div>
                     <div class="circles">
