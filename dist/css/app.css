@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans&display=swap);
 /* Variables */
 /* /Variables */
+/* Mixin */
+/* /Mixin */
 /* Common */
 * {
   box-sizing: border-box;
@@ -554,7 +556,7 @@ footer .bottom {
   padding: 50px 0;
 }
 footer .bottom .socials {
-  width: 360px;
+  width: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
