@@ -401,6 +401,9 @@ main .prices .intro {
 main .prices .intro h2 {
   margin-bottom: 25px;
 }
+main .prices .table {
+  position: relative;
+}
 main .prices table {
   width: 100%;
   border-collapse: collapse;
@@ -427,45 +430,65 @@ main .prices table thead > tr td:nth-child(4) img,
 main .prices table thead > tr td:nth-child(4) h3 {
   margin: 20px;
 }
-main .prices td {
+main .prices table td {
   width: calc(100% / 4);
   border: 1px solid #eeeeee;
   padding: 15px;
   font-size: 20px;
   color: #808080;
 }
-main .prices td .fa-check {
+main .prices table td .fa-check {
   color: #40c4ff;
 }
-main .prices td .blue_btn {
+main .prices table td .blue_btn {
   vertical-align: 2px;
   color: white;
 }
-main .prices tr > td:nth-child(2),
-main .prices tr > td:nth-child(3),
-main .prices tr > td:nth-child(4) {
+main .prices table tr > td:nth-child(2),
+main .prices table tr > td:nth-child(3),
+main .prices table tr > td:nth-child(4) {
   text-align: center;
 }
-main .prices .buy {
+main .prices table .buy {
   height: 85px;
   color: white;
 }
-main .prices .buy td:nth-child(2),
-main .prices .buy td:nth-child(3),
-main .prices .buy td:nth-child(4) {
+main .prices table .buy td:nth-child(2),
+main .prices table .buy td:nth-child(3),
+main .prices table .buy td:nth-child(4) {
   background: #f7fdff;
 }
-main .prices .buy td:nth-child(1) {
+main .prices table .buy td:nth-child(1) {
   border-left: unset;
   border-bottom: unset;
 }
-main .prices .buy .white_btn {
+main .prices table .buy .white_btn {
   padding: 17px 40px;
   background: white;
   border: 3px solid #eeeeee;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
+}
+main .prices .table_icons {
+  position: absolute;
+  top: 25px;
+  right: -50px;
+}
+main .prices .table_icons > div {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 4px 1px #e0dfdf;
+}
+main .prices .table_icons > div:nth-child(1) {
+  background: #ef2853;
+}
+main .prices .table_icons > div:nth-child(2) {
+  color: #ef2853;
+  margin-top: 10px;
 }
 main .logos {
   height: 200px;
