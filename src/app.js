@@ -223,6 +223,80 @@ const app = new Vue({
                 "./dist/img/testimonials-standard-4.png"
             ],
         },
+        onlineCourses: [
+            {
+                title: 'Android Developer',
+                teacher: 'David Sanders',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+                students: '1',
+                tag: 'programming',
+                img: './dist/img/course-5-f-img.jpg'
+            },
+            {
+                title: 'Web Designing',
+                teacher: 'Jennifer Powell',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+                students: '1',
+                tag: 'programming',
+                img: './dist/img/course-6-f-img.jpg'
+            },
+            {
+                title: 'Financial Modeling',
+                teacher: 'Edward Bowman',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+                students: '1',
+                tag: 'business',
+                img: './dist/img/blog-post-2.jpg'
+            },
+            {
+                title: 'Business Information Management',
+                teacher: 'Charley Hughie',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+                students: '1',
+                tag: 'business',
+                img: './dist/img/course-2-f-img.jpg'
+            },
+            {
+                title: 'HTML5 Coding for Beginners',
+                teacher: 'Talbot Garret',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+                students: '1',
+                tag: 'programming',
+                img: './dist/img/course-11-f-img.jpg'
+            },
+            {
+                title: 'Marketing in the Real World',
+                teacher: 'Barnaby Roscoe',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+                students: '1',
+                tag: 'business',
+                img: './dist/img/course-9-f-img.jpg'
+            },
+            {
+                title: 'Animation 101',
+                teacher: 'Zackary Matthew',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+                students: '1',
+                tag: 'programming',
+                img: './dist/img/course-3-f-img.jpg'
+            },
+            {
+                title: 'Budgeting in the Real World',
+                teacher: 'Martin Dallas',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+                students: '1',
+                tag: 'business',
+                img: './dist/img/blog-post-5.jpg'
+            },
+            {
+                title: 'Learn-by-Doing',
+                teacher: 'Milburn Ern',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+                students: '1',
+                tag: 'business',
+                img: './dist/img/blog-post-1.jpg'
+            },
+        ],
         scrolled: false
     },
     methods: {

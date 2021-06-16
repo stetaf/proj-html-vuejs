@@ -161,6 +161,70 @@ var app = new Vue({
       text: ['"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis earum iusto iure cum tenetur aspernatur quod dolorem nesciunt consectetur. In consequatur ratione cum praesentium quidem nesciunt minus aperiam reprehenderit porro laboriosam! Ut voluptatem sequi atque."', '"Proin ac ullamcorper quam. In urna enim, accumsan eget quam a, mollis auctor quam. Vestibulum mi est, porta ac felis ut, vestibulum sodales sapien. Praesent aliquam rhoncus neque nec porta. Pellentesque congue ante justo, ac."', '"Vestibulum condimentum facilisis ullamcorper. Sed pharetra diam eget metus faucibus, id rutrum magna placerat. Fusce pharetra, ipsum a lobortis feugiat, nulla nulla venenatis turpis, et euismod urna magna ac neque. Nunc imperdiet mauris vitae orci iaculis, ut aliquam libero tincidunt."'],
       images: ["./dist/img/testimonials-standard-2.png", "./dist/img/testimonials-standard-3.png", "./dist/img/testimonials-standard-4.png"]
     },
+    onlineCourses: [{
+      title: 'Android Developer',
+      teacher: 'David Sanders',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+      students: '1',
+      tag: 'programming',
+      img: './dist/img/course-5-f-img.jpg'
+    }, {
+      title: 'Web Designing',
+      teacher: 'Jennifer Powell',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+      students: '1',
+      tag: 'programming',
+      img: './dist/img/course-6-f-img.jpg'
+    }, {
+      title: 'Financial Modeling',
+      teacher: 'Edward Bowman',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+      students: '1',
+      tag: 'business',
+      img: './dist/img/blog-post-2.jpg'
+    }, {
+      title: 'Business Information Management',
+      teacher: 'Charley Hughie',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+      students: '1',
+      tag: 'business',
+      img: './dist/img/course-2-f-img.jpg'
+    }, {
+      title: 'HTML5 Coding for Beginners',
+      teacher: 'Talbot Garret',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+      students: '1',
+      tag: 'programming',
+      img: './dist/img/course-11-f-img.jpg'
+    }, {
+      title: 'Marketing in the Real World',
+      teacher: 'Barnaby Roscoe',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+      students: '1',
+      tag: 'business',
+      img: './dist/img/course-9-f-img.jpg'
+    }, {
+      title: 'Animation 101',
+      teacher: 'Zackary Matthew',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+      students: '1',
+      tag: 'programming',
+      img: './dist/img/course-3-f-img.jpg'
+    }, {
+      title: 'Budgeting in the Real World',
+      teacher: 'Martin Dallas',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+      students: '1',
+      tag: 'business',
+      img: './dist/img/blog-post-5.jpg'
+    }, {
+      title: 'Learn-by-Doing',
+      teacher: 'Milburn Ern',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?',
+      students: '1',
+      tag: 'business',
+      img: './dist/img/blog-post-1.jpg'
+    }],
     scrolled: false
   },
   methods: {
