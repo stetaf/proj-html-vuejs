@@ -40,6 +40,9 @@ h1, h2, h3, h4, h5 {
 /* /Common */
 /* Header */
 header {
+  background-image: url("../img/course-9-f-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 650px;
   width: 100%;
   position: relative;
@@ -55,6 +58,7 @@ header nav {
   justify-content: space-between;
   text-transform: uppercase;
   padding: 35px 0;
+  position: relative;
 }
 header nav i {
   margin-left: 30px;
@@ -94,6 +98,7 @@ header nav .scroll_up i {
   margin: unset;
 }
 header .intro {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,18 +131,14 @@ header .circles i {
   font-size: 18px;
 }
 
-header:after {
+header:before {
+  background: #0000003b;
   content: "";
-  background-image: url("../img/course-9-f-img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(0.7);
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;
 }
 
 /* /Header */

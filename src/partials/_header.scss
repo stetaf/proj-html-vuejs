@@ -1,5 +1,8 @@
 /* Header */
 header { 
+    background-image: url('../img/course-9-f-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 650px;
     width: 100%;
     position: relative;
@@ -15,6 +18,7 @@ header {
         justify-content: space-between;
         text-transform: uppercase;
         padding: 35px 0;
+        position: relative;
 
         i { 
             margin-left: 30px; 
@@ -57,6 +61,7 @@ header {
         }
     }
     .intro {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -85,17 +90,13 @@ header {
         i { font-size: 18px; }
     }
 }
-header:after {
+header:before {
+    background: #0000003b;
     content: "";
-    background-image: url('../img/course-9-f-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(0.7);
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    position: absolute;
-    z-index: -1;   
+    position: absolute;   
 }
 /* /Header */
