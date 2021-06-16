@@ -219,41 +219,51 @@
                         <h2>Pricing Plans</h2>
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, hic laboriosam! Perspiciatis deserunt laudantium odio!</span>
                     </div>
-                    <table border="0" cellspacing="0" cellpadding="0">
-                        <thead>
-                            <tr>
-                                <td><h3>Save up to 40% by paying weekly</h3></td>
-                                <td v-for="package in packages">
-                                    <img :src="package.img" alt="Package image">
-                                    <h3>{{ package.name }}</h3>
-                                    <h3 class="price">$ {{ package.price }}</h3>
-                                </td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h5>Number of courses</h5></td>
-                                <td v-for="package in packages">{{ package.courses }}</td>
-                            </tr>
-                            <tr>
-                                <td><h5>Time</h5></td>
-                                <td v-for="package in packages">{{ package.time }} Days</td>
-                            </tr>
-                            <tr v-for="(product, index) in packages[0].products">
-                                <td><h5>{{ product.name }}</h5></td>
-                                <td v-for="package in packages">
-                                    <i v-if="package.products[index].value == true" class="fas fa-check"></i>
-                                    <i v-else class="fas fa-times"></i>
-                                </td>
-                            </tr>
-                            <tr class="buy">
-                                <td></td>
-                                <td><a href="#"><span class="white_btn">Get it now</span></a></td>
-                                <td><a href="#"><span class="blue_btn">Get it now</span></a></td>
-                                <td><a href="#"><span class="white_btn">Get it now</span></a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <td><h3>Save up to 40% by paying weekly</h3></td>
+                                    <td v-for="package in packages">
+                                        <img :src="package.img" alt="Package image">
+                                        <h3>{{ package.name }}</h3>
+                                        <h3 class="price">$ {{ package.price }}</h3>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><h5>Number of courses</h5></td>
+                                    <td v-for="package in packages">{{ package.courses }}</td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Time</h5></td>
+                                    <td v-for="package in packages">{{ package.time }} Days</td>
+                                </tr>
+                                <tr v-for="(product, index) in packages[0].products">
+                                    <td><h5>{{ product.name }}</h5></td>
+                                    <td v-for="package in packages">
+                                        <i v-if="package.products[index].value == true" class="fas fa-check"></i>
+                                        <i v-else class="fas fa-times"></i>
+                                    </td>
+                                </tr>
+                                <tr class="buy">
+                                    <td></td>
+                                    <td><a href="#"><span class="white_btn">Get it now</span></a></td>
+                                    <td><a href="#"><span class="blue_btn">Get it now</span></a></td>
+                                    <td><a href="#"><span class="white_btn">Get it now</span></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="table_icons">
+                            <div>
+                                <img src="./dist/img/svg/svg-0.svg" width="30">
+                            </div>
+                            <div>
+                                <i class="fas fa-shopping-cart"></i>    
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- Prices -->
