@@ -166,47 +166,23 @@
                     <h2>Popular Online Courses</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod exercitationem fugiat eos repudiandae, quisquam recusandae vitae ipsam. Officia, unde. Voluptates?</p>
                     <div class="course_cards">
-                        <div>
-                            <img src="./dist/img/course-5-f-img.jpg" alt="">
-                            <h5>Android Developer</h5>
-                            <h6>David Sanders</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?</p>
+                        <div v-for="course in onlineCourses.slice(introCounter*3, (introCounter*3)+3)">
+                            <img :src="course.img" alt="">
+                            <h5>{{ course.title }}</h5>
+                            <h6>{{ course.teacher }}</h6>
+                            <p>{{ course.description }}</p>
                             <div class="meta">
                                 <i class="fas fa-user"></i>
-                                <span>1</span>
+                                <span>{{ course.students }}</span>
                                 <i class="fas fa-tag"></i>
-                                <span>Programming</span>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="./dist/img/course-6-f-img.jpg" alt="">
-                            <h5>Web Designing</h5>
-                            <h6>Jennifer Powell</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?</p>
-                            <div class="meta">
-                                <i class="fas fa-user"></i>
-                                <span>1</span>
-                                <i class="fas fa-tag"></i>
-                                <span>Programming</span>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="./dist/img/blog-post-2.jpg" alt="">
-                            <h5>Financial Modeling</h5>
-                            <h6>Edward Bowman</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti inventore unde pariatur vitae ipsa expedita earum explicabo esse sed?</p>
-                            <div class="meta">
-                                <i class="fas fa-user"></i>
-                                <span>1</span>
-                                <i class="fas fa-tag"></i>
-                                <span>Business</span>
+                                <span>{{ course.tag }}</span>
                             </div>
                         </div>
                     </div>
                     <div class="circles">
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
-                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle" :style="[introCounter == 0 ? { opacity: 1 } : { opacity: 0.4 }]"></i>
+                        <i class="fas fa-circle" :style="[introCounter == 1 ? { opacity: 1 } : { opacity: 0.4 }]"></i>
+                        <i class="fas fa-circle" :style="[introCounter == 2 ? { opacity: 1 } : { opacity: 0.4 }]"></i>    
                     </div>
                 </div>
             </section>
