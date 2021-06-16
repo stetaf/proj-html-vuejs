@@ -183,6 +183,7 @@ main .empowering a {
 main .tutoring p,
 main .empowering p {
   color: #595959;
+  font-size: 19px;
 }
 main .empowering {
   height: 500px;
