@@ -168,7 +168,6 @@ main .cards .container {
   justify-content: space-between;
 }
 main .cards .card {
-  background: #f2f8fc;
   height: 180px;
   width: 150px;
   display: flex;
@@ -181,6 +180,9 @@ main .cards .card img {
 }
 main .cards .card h4 {
   margin-top: 25px;
+}
+main .cards .card:hover {
+  background: #f2f8fc;
 }
 main .tutoring h2, main .tutoring p,
 main .empowering h2,
