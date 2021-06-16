@@ -130,13 +130,16 @@ var app = new Vue({
     },
     popularCourses: [{
       name: 'Business English',
-      author: 'Preston Marshall'
+      author: 'Preston Marshall',
+      url: '#'
     }, {
       name: 'Social Computing',
-      author: 'David Sanders'
+      author: 'David Sanders',
+      url: '#'
     }, {
       name: 'Learn Spanish',
-      author: 'Jennie King'
+      author: 'Jennie King',
+      url: '#'
     }],
     scrolled: false
   },

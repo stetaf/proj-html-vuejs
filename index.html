@@ -292,7 +292,7 @@
                     <div class="popular">
                         <h2>Popular Courses</h2>
                         <div v-for="course in popularCourses">
-                            <a href="#"><h4>{{ course.name }}</h4></a>
+                            <a :href="course.url"><h4>{{ course.name }}</h4></a>
                             <span>{{ course.author }}</span>
                         </div>
                     </div>
