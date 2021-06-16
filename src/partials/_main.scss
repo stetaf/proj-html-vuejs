@@ -340,6 +340,7 @@ main {
                 color: white;
     
                 .white_btn { @include white_btn; }
+                .white_btn:hover { border-color: $lightblue; }
             }
         }
 

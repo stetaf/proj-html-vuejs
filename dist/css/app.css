@@ -503,6 +503,9 @@ main .prices table .buy .white_btn {
   font-size: 14px;
   font-weight: bold;
 }
+main .prices table .buy .white_btn:hover {
+  border-color: #40c4ff;
+}
 main .prices .table_icons {
   position: absolute;
   top: 25px;
