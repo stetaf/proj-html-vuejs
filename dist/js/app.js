@@ -156,6 +156,11 @@ var app = new Vue({
       text: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil repellat incidunt velit eligendi nam quo voluptate soluta magni. Voluptates esse quos nesciunt alias quod?', 'Pellentesque arcu augue, pulvinar eget justo vitae, consectetur sodales quam. Mauris eu lorem cursus risus pellentesque maximus. Nulla quis nisl a urna gravida lobortis. Quisque quis magna velit. Proin ut.', 'Sed rhoncus dignissim accumsan. Mauris tristique est eu quam volutpat, sit amet imperdiet arcu efficitur. Praesent tincidunt ullamcorper mauris, eget tincidunt nisl. Ut ex metus, rutrum sed rhoncus sed, cursus.'],
       images: ["url('./dist/img/course-9-f-img.jpg')", "url('./dist/img/course-10-f-img.jpg')", "url('./dist/img/course-11-f-img.jpg')"]
     },
+    reviewsContent: {
+      name: ['Joan Collins', 'Jeri Gallagher', 'Nydia Leilah'],
+      text: ['"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis earum iusto iure cum tenetur aspernatur quod dolorem nesciunt consectetur. In consequatur ratione cum praesentium quidem nesciunt minus aperiam reprehenderit porro laboriosam! Ut voluptatem sequi atque."', '"Proin ac ullamcorper quam. In urna enim, accumsan eget quam a, mollis auctor quam. Vestibulum mi est, porta ac felis ut, vestibulum sodales sapien. Praesent aliquam rhoncus neque nec porta. Pellentesque congue ante justo, ac."', '"Vestibulum condimentum facilisis ullamcorper. Sed pharetra diam eget metus faucibus, id rutrum magna placerat. Fusce pharetra, ipsum a lobortis feugiat, nulla nulla venenatis turpis, et euismod urna magna ac neque. Nunc imperdiet mauris vitae orci iaculis, ut aliquam libero tincidunt."'],
+      images: ["./dist/img/testimonials-standard-2.png", "./dist/img/testimonials-standard-3.png", "./dist/img/testimonials-standard-4.png"]
+    },
     scrolled: false
   },
   methods: {
