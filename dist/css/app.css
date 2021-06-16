@@ -352,9 +352,10 @@ main .courses {
 main .courses h2 {
   margin-bottom: 20px;
 }
-main .courses > p {
+main .courses > div > p {
   width: 85%;
   margin: auto;
+  color: #808080;
 }
 main .courses .course_cards {
   display: flex;
