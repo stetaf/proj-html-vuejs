@@ -397,6 +397,9 @@ main .courses .circles i:nth-child(3) {
 main .prices {
   padding: 100px 0;
   border-bottom: 1px solid #f0f0f0;
+  background: url(../img/background-pattern.jpg);
+  background-size: 245%;
+  background-position: 125% -32%;
 }
 main .prices > span {
   color: #595959;
