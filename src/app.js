@@ -201,9 +201,9 @@ const app = new Vue({
                 'Sed rhoncus dignissim accumsan. Mauris tristique est eu quam volutpat, sit amet imperdiet arcu efficitur. Praesent tincidunt ullamcorper mauris, eget tincidunt nisl. Ut ex metus, rutrum sed rhoncus sed, cursus.'
             ],
             images: [
-                "url('../dist/img/course-9-f-img.jpg')",
-                "url('../dist/img/course-10-f-img.jpg')",
-                "url('../dist/img/course-11-f-img.jpg')"
+                "url('./dist/img/course-9-f-img.jpg')",
+                "url('./dist/img/course-10-f-img.jpg')",
+                "url('./dist/img/course-11-f-img.jpg')"
             ],
         },
         scrolled: false

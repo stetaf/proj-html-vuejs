@@ -154,7 +154,7 @@ var app = new Vue({
     introContent: {
       title: ['Contemporary Ideas', 'Trusted In-Home Tutoring', 'Learning Possibilities'],
       text: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil repellat incidunt velit eligendi nam quo voluptate soluta magni. Voluptates esse quos nesciunt alias quod?', 'Pellentesque arcu augue, pulvinar eget justo vitae, consectetur sodales quam. Mauris eu lorem cursus risus pellentesque maximus. Nulla quis nisl a urna gravida lobortis. Quisque quis magna velit. Proin ut.', 'Sed rhoncus dignissim accumsan. Mauris tristique est eu quam volutpat, sit amet imperdiet arcu efficitur. Praesent tincidunt ullamcorper mauris, eget tincidunt nisl. Ut ex metus, rutrum sed rhoncus sed, cursus.'],
-      images: ["url('../dist/img/course-9-f-img.jpg')", "url('../dist/img/course-10-f-img.jpg')", "url('../dist/img/course-11-f-img.jpg')"]
+      images: ["url('./dist/img/course-9-f-img.jpg')", "url('./dist/img/course-10-f-img.jpg')", "url('./dist/img/course-11-f-img.jpg')"]
     },
     scrolled: false
   },
