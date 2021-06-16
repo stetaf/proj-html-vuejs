@@ -391,6 +391,9 @@ main .prices {
   padding: 100px 0;
   border-bottom: 1px solid #f0f0f0;
 }
+main .prices > span {
+  color: #595959;
+}
 main .prices .intro {
   text-align: center;
   margin-bottom: 70px;
@@ -405,6 +408,9 @@ main .prices table {
 }
 main .prices table thead td {
   color: #303030;
+}
+main .prices table .price {
+  color: #595959;
 }
 main .prices table thead > tr td:nth-child(3) {
   border-top: 5px solid #40c4ff;
