@@ -207,6 +207,7 @@ main {
                 text-align: left;
                 border: 1px solid #efefef;
                 background: white;
+                position: relative;
             
                 h5 { font-size: 16px; }
 
@@ -217,6 +218,21 @@ main {
                     color: lightgray;
                     font-size: 13px;
                 }    
+
+                .price { 
+                    background: gold;
+                    color: white;
+                    font-size: 13px;
+                    width: 50px;
+                    height: 22px;
+                    position: absolute;
+                    top: 220px;
+                    right: 15px;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
             img { 
                 width: 100%;

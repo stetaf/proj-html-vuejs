@@ -357,6 +357,7 @@ main .courses .course_cards > div {
   text-align: left;
   border: 1px solid #efefef;
   background: white;
+  position: relative;
 }
 main .courses .course_cards > div h5 {
   font-size: 16px;
@@ -368,6 +369,20 @@ main .courses .course_cards > div h6 {
   margin-bottom: 15px;
   color: lightgray;
   font-size: 13px;
+}
+main .courses .course_cards > div .price {
+  background: gold;
+  color: white;
+  font-size: 13px;
+  width: 50px;
+  height: 22px;
+  position: absolute;
+  top: 220px;
+  right: 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .courses .course_cards img {
   width: 100%;
