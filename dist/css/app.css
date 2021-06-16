@@ -435,6 +435,9 @@ main .prices .intro {
 main .prices .intro h2 {
   margin-bottom: 25px;
 }
+main .prices .intro span {
+  color: #808080;
+}
 main .prices .table {
   position: relative;
 }
