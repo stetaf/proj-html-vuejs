@@ -290,6 +290,7 @@ main {
                 border: 1px solid #eeeeee;
                 padding: 15px;
                 font-size: 20px;
+                background: white;
     
                 .fa-check { color: $lightblue; }
     
@@ -318,6 +319,7 @@ main {
                 td:nth-child(1) { 
                     border-left: unset;
                     border-bottom: unset;
+                    background: transparent;
                  }
     
                 color: white;

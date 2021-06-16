@@ -445,6 +445,7 @@ main .prices table td {
   border: 1px solid #eeeeee;
   padding: 15px;
   font-size: 20px;
+  background: white;
   color: #808080;
 }
 main .prices table td .fa-check {
@@ -471,6 +472,7 @@ main .prices table .buy td:nth-child(4) {
 main .prices table .buy td:nth-child(1) {
   border-left: unset;
   border-bottom: unset;
+  background: transparent;
 }
 main .prices table .buy .white_btn {
   padding: 17px 40px;
