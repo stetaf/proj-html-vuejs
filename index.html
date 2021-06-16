@@ -20,7 +20,10 @@
                     <a v-for="link in mainLinks" :href=link.url>{{ link.value }}</a>
                     <div class="icons">
                         <i class="fas fa-search"></i>
-                        <i class="far fa-clipboard"></i>
+                        <div class="cart">
+                            <i class="far fa-clipboard"></i>
+                            <span class="cart_items">{{ getCartItems() }}</span>
+                        </div>
                         <i class="fas fa-bars"></i>
                     </div>
                     <div class="scroll_up" @click="scrollUp()" v-show="scrolled == true">

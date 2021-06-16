@@ -21,9 +21,15 @@ header {
             font-size: 20px;
         }
 
-        .icons { position: relative; }
-        .icons:after {
-            content: "0";
+        .icons { 
+            position: relative; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+        }
+
+        .cart_items { 
             background: #40c4ff;
             border-radius: 50%;
             position: absolute;
@@ -31,7 +37,6 @@ header {
             left: 60px;
             font-size: 10px;
             padding: 0 5px;
-        
         }
 
         .scroll_up { 
