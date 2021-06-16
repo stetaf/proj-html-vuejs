@@ -19,12 +19,12 @@
                     <a href="#"><img :src="siteLogo" alt="Logo light" width="200"></a>
                     <a v-for="link in mainLinks" :href=link.url>{{ link.value }}</a>
                     <div class="icons">
-                        <i class="fas fa-search"></i>
+                        <a href="#"><i class="fas fa-search"></i></a>
                         <div class="cart">
-                            <i class="far fa-clipboard"></i>
+                            <a href="#"><i class="far fa-clipboard"></i></a>
                             <span class="cart_items">{{ getCartItems() }}</span>
                         </div>
-                        <i class="fas fa-bars"></i>
+                        <a href="#"><i class="fas fa-bars"></i></a>
                     </div>
                     <div class="scroll_up" @click="scrollUp()" v-show="scrolled == true">
                         <i class="fas fa-chevron-up"></i>
