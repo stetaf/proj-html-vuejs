@@ -12,6 +12,7 @@ var app = new Vue({
   el: '#app',
   data: {
     siteLogo: './dist/img/logo-light.png',
+    cartItems: '0',
     mainLinks: [{
       value: 'Home',
       url: '#'
@@ -76,6 +77,9 @@ var app = new Vue({
   methods: {
     scrollUp: function scrollUp() {
       window.scrollTo(0, 0);
+    },
+    getCartItems: function getCartItems() {
+      return this.cartItems;
     }
   },
   mounted: function mounted() {

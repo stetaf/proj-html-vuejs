@@ -4,6 +4,7 @@ const app = new Vue({
     el: '#app',
     data: {
         siteLogo: './dist/img/logo-light.png',
+        cartItems: '0',
         mainLinks: [
             {
                 value: 'Home',
@@ -89,6 +90,9 @@ const app = new Vue({
     methods: {
         scrollUp() {
             window.scrollTo(0, 0);
+        },
+        getCartItems() {
+            return this.cartItems;
         }
     },
     mounted: function() {
@@ -98,6 +102,6 @@ const app = new Vue({
             } else if (window.scrollY < 400) {
                 this.scrolled = false;
             }
-        })
+        });
     }
 });
