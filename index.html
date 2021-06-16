@@ -299,7 +299,7 @@
                     <div class="support">
                         <h2>Support</h2>
                         <ul>
-                            <li v-for="link in supportLinks"><a href="#">{{ link.value }}</a></li>
+                            <li v-for="link in supportLinks"><a :href="link.url">{{ link.value }}</a></li>
                         </ul>
                     </div>
                     <div class="flexible">
