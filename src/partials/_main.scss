@@ -369,12 +369,14 @@ main {
 
             & > div:nth-child(1) {
                 background: $red;
+                a { height: 35px; }
             }
 
             & > div:nth-child(2) {
                 color: $red;            
                 margin-top: 10px;
             }
+
         }
     }
 

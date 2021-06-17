@@ -536,6 +536,9 @@ main .prices .table_icons > div {
 main .prices .table_icons > div:nth-child(1) {
   background: #ef2853;
 }
+main .prices .table_icons > div:nth-child(1) a {
+  height: 35px;
+}
 main .prices .table_icons > div:nth-child(2) {
   color: #ef2853;
   margin-top: 10px;
