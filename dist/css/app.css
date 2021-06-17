@@ -118,7 +118,7 @@ header .intro h1, header .intro p {
 }
 header .intro h1 {
   font-size: 65px;
-  font-weight: 200;
+  font-weight: normal;
 }
 header .intro p {
   text-align: center;
@@ -391,6 +391,7 @@ main .courses .course_cards > div h6 {
   margin-bottom: 15px;
   color: #cecece;
   font-size: 13px;
+  font-weight: normal;
 }
 main .courses .course_cards > div p {
   color: #959595;
@@ -580,7 +581,7 @@ footer {
 footer h2 {
   color: #f3f3f4;
   margin-bottom: 35px;
-  font-weight: 200;
+  font-weight: normal;
 }
 footer .upper {
   display: flex;
