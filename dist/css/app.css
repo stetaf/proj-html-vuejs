@@ -145,7 +145,7 @@ header .circles > i:nth-child(1), header .circles > i:nth-child(2) {
   margin-right: 5px;
 }
 header .circles i {
-  font-size: 18px;
+  font-size: 21px;
 }
 
 header:before {
