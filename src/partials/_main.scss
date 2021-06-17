@@ -28,6 +28,14 @@ main {
         }
     }
 
+    .tutoring { 
+        border-bottom: 1px solid rgb(240, 240, 240);
+        
+        & > div > img { 
+            position: relative;
+            top: 5px;
+        }
+    }
     .tutoring,
     .empowering {
         h2, p { margin-bottom: 25px; }

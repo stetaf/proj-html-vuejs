@@ -190,6 +190,13 @@ main .cards .card h4 {
 main .cards .card:hover {
   background: #f2f8fc;
 }
+main .tutoring {
+  border-bottom: 1px solid #f0f0f0;
+}
+main .tutoring > div > img {
+  position: relative;
+  top: 5px;
+}
 main .tutoring h2, main .tutoring p,
 main .empowering h2,
 main .empowering p {
