@@ -246,27 +246,27 @@ var app = new Vue({
       list: ['We enrich lives through learning.', 'Maximizing potential through individual attention.', 'The trusted name for specialized training', 'People teach. People learn. This is where they connect.'],
       img: './dist/img/h12-tabs-icon-1.png'
     }, {
-      title: 'Aliquam tempus',
+      title: 'Degree Program',
       text: 'Cras molestie sapien eu ante ornare, quis eleifend augue consectetur. Proin in justo eu orci vestibulum pulvinar ut a odio. Mauris diam augue, malesuada fringilla orci ut, egestas imperdiet purus. Curabitur euismod odio et ante.',
       list: ['Sed eu congue tortor, at posuere eros. Nam rhoncus nunc.We enrich lives through learning.', 'Nam sollicitudin tempus leo, ut placerat sapien semper sed. Mauris.', 'Aliquam non condimentum metus. Duis sit amet volutpat enim. Duis.', 'Suspendisse eget mattis mauris. Sed aliquet velit nisi. Maecenas hendrerit.'],
       img: './dist/img/h12-tabs-icon-2.png'
     }, {
-      title: 'Quisque quis',
+      title: 'Career Achievements',
       text: 'In ultrices nibh lorem, sagittis egestas nulla vehicula et. In mattis est a sem faucibus, at interdum felis consequat. Vivamus urna sem, egestas in tincidunt.',
       list: ['Pellentesque in lectus sit amet risus sodales imperdiet aliquam vitae.', 'In mattis efficitur risus sit amet commodo. Fusce nisi lacus.', 'Nunc ultricies risus eget porttitor vestibulum. Nunc varius fermentum libero.', 'Fusce ultricies ex lorem, in ullamcorper elit ultrices eu. Praesent.'],
       img: './dist/img/h12-tabs-icon-3.png'
     }, {
-      title: 'Nulla iaculis',
+      title: 'Personal Management',
       text: 'Donec dapibus odio eget aliquam varius. Fusce elementum risus vel ligula vulputate pellentesque. Nunc porttitor, ex nec luctus bibendum, mauris turpis sollicitudin est, id malesuada.',
       list: ['Vestibulum eget quam felis. Nullam placerat lectus ipsum, et dapibus.', 'Suspendisse nibh metus, condimentum ac pulvinar bibendum, vulputate rutrum magna.', 'Interdum et malesuada fames ac ante ipsum primis in faucibus.', 'Etiam nec libero rhoncus, vestibulum justo et, tempor nunc. Morbi.'],
       img: './dist/img/h12-tabs-icon-4.png'
     }, {
-      title: 'Nullam dapibus',
+      title: 'Steps To Success',
       text: 'Sed sit amet tempor risus. Sed in ipsum id dolor sollicitudin sagittis ac eu lacus. Vestibulum maximus lacinia sem et bibendum. Donec vel suscipit nisi.',
       list: ['Maecenas luctus magna ac aliquam lobortis. Donec tortor enim, suscipit.', 'Vestibulum pretium nisi posuere nibh euismod, id pulvinar lacus convallis.', 'Phasellus tincidunt bibendum laoreet. Ut scelerisque lectus interdum, sollicitudin turpis.', 'Cras eleifend varius tincidunt. Integer eget elit lacus. Pellentesque mollis.'],
       img: './dist/img/h12-tabs-icon-5.png'
     }, {
-      title: 'Fusce vehicula',
+      title: 'Knowledge Transfer',
       text: 'Donec gravida in nisl a feugiat. Vivamus porta cursus ligula, eget pretium sem consectetur sit amet. Nulla facilisi. Ut a dui consequat, dictum lacus nec.',
       list: ['Sed malesuada interdum augue laoreet lobortis. Aliquam dapibus nulla libero.', 'Phasellus ligula dui, malesuada vel rutrum sit amet, cursus quis.', 'Ut pretium purus sed euismod sodales. Integer nec felis mi.', 'Phasellus vel laoreet lectus. Vestibulum commodo vulputate vestibulum. Vivamus eget.'],
       img: './dist/img/h12-tabs-icon-6.png'
