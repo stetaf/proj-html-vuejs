@@ -385,6 +385,7 @@ const app = new Vue({
                 img: './dist/img/h12-tabs-icon-6.png'
             }
         ],
+        poss: '0',
         scrolled: false
     },
     methods: {
@@ -410,6 +411,7 @@ const app = new Vue({
          */
         changePoss(id) {
             this.currPoss = this.possibilities[id];
+            this.poss = id;
         }
     },
     mounted: function() {

@@ -271,6 +271,7 @@ var app = new Vue({
       list: ['Sed malesuada interdum augue laoreet lobortis. Aliquam dapibus nulla libero.', 'Phasellus ligula dui, malesuada vel rutrum sit amet, cursus quis.', 'Ut pretium purus sed euismod sodales. Integer nec felis mi.', 'Phasellus vel laoreet lectus. Vestibulum commodo vulputate vestibulum. Vivamus eget.'],
       img: './dist/img/h12-tabs-icon-6.png'
     }],
+    poss: '0',
     scrolled: false
   },
   methods: {
@@ -298,6 +299,7 @@ var app = new Vue({
      */
     changePoss: function changePoss(id) {
       this.currPoss = this.possibilities[id];
+      this.poss = id;
     }
   },
   mounted: function mounted() {
