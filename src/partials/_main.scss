@@ -353,18 +353,12 @@ main {
                     background: transparent;
                 }
     
-                .blue_btn { 
-                    vertical-align: 2px;
-                    color: white;
-                }
-                .blue_btn:hover { 
-                    border: 3px solid $lightblue;
-                    color: $lightblue;
-                    background: white;
-                }
-
                 .white_btn { @include white_btn; }
-                .white_btn:hover { border-color: $lightblue; }
+                .white_btn:hover {
+                    background: $lightblue;
+                    color: white;
+                    border-color: $lightblue;
+                }
             }
         }
 

@@ -519,15 +519,6 @@ main .prices table .buy td:nth-child(1) {
   border-bottom: unset;
   background: transparent;
 }
-main .prices table .buy .blue_btn {
-  vertical-align: 2px;
-  color: white;
-}
-main .prices table .buy .blue_btn:hover {
-  border: 3px solid #40c4ff;
-  color: #40c4ff;
-  background: white;
-}
 main .prices table .buy .white_btn {
   padding: 17px 40px;
   background: white;
@@ -537,6 +528,8 @@ main .prices table .buy .white_btn {
   font-weight: bold;
 }
 main .prices table .buy .white_btn:hover {
+  background: #40c4ff;
+  color: white;
   border-color: #40c4ff;
 }
 main .prices .table_icons {
