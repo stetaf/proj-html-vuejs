@@ -415,7 +415,6 @@ const app = new Vue({
         }
     },
     mounted: function() {
-        this.currPoss = this.possibilities[0];
         // Adds an event listener to catch the scroll action and show/hide the scroll-top button
         window.addEventListener("scroll", () => {
             if (window.scrollY > 400) {
