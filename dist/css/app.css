@@ -215,35 +215,33 @@ main .empowering p {
   font-size: 19px;
 }
 main .empowering {
-  height: 500px;
-  position: relative;
-  padding-left: 55%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 40px 0;
 }
+main .empowering > div {
+  display: flex;
+  align-items: flex-end;
+}
 main .empowering p {
-  width: 45%;
+  width: 75%;
 }
 main .empowering img {
   width: 500px;
-  position: absolute;
-  top: 100px;
-  left: 25%;
 }
-main .empowering .data {
+main .empowering .right {
+  padding: 0 65px;
+}
+main .empowering .right .data {
   display: flex;
   color: #40c4ff;
 }
-main .empowering .data > div:nth-child(1) {
+main .empowering .right .data > div:nth-child(1) {
   margin-right: 18%;
 }
-main .empowering .data h2 {
+main .empowering .right .data h2 {
   font-size: 48px;
   margin-bottom: 10px;
 }
-main .empowering .data span {
+main .empowering .right .data span {
   font-weight: bold;
 }
 main .reviews {

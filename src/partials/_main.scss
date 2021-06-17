@@ -52,33 +52,37 @@ main {
     }
 
     .empowering { 
-        height: 500px;
-        position: relative;
-        padding-left: 55%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        // height: 500px;
+        // position: relative;
+        // padding-left: 55%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
         margin: 40px 0;
 
-        p { width: 45%; }
-
-        img { 
-            width: 500px;
-            position: absolute;
-            top: 100px;
-            left: 25%;
+        & > div { 
+            display: flex;
+            align-items: flex-end;
         }
 
-        .data { 
-            display: flex;
-            color: $lightblue;
+        p { width: 75%; }
 
-            & > div:nth-child(1) { margin-right: 18%; }
-            h2 { 
-                font-size: 48px;
-                margin-bottom: 10px; 
+        img { width: 500px; }
+
+        .right { 
+            padding: 0 65px;
+
+            .data { 
+                display: flex;
+                color: $lightblue;
+    
+                & > div:nth-child(1) { margin-right: 18%; }
+                h2 { 
+                    font-size: 48px;
+                    margin-bottom: 10px; 
+                }
+                span { font-weight: bold; }
             }
-            span { font-weight: bold; }
         }
     } 
 
