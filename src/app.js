@@ -309,14 +309,24 @@ const app = new Vue({
         scrolled: false
     },
     methods: {
+        /**
+         * ### scrollUp
+         * Scrolls the window object to X:Y [0:0]
+         */
         scrollUp() {
             window.scrollTo(0, 0);
         },
+        /**
+         * ### getCartItems
+         * Returns the amount of items in the shopping cart
+         * @returns number of cartItems
+         */
         getCartItems() {
             return this.cartItems;
         }
     },
     mounted: function() {
+        // Adds an event listener to catch the scroll action and show/hide the scroll-top button
         window.addEventListener("scroll", () => {
             if (window.scrollY > 400) {
                 this.scrolled = true;
@@ -324,6 +334,7 @@ const app = new Vue({
                 this.scrolled = false;
             }
         });
+        // Handles the counter for the multiple slider in the website, and changes the header background-image accordingly
         let introSlider = setInterval(() => {
             ((this.introCounter + 1) > this.introContent.images.length - 1) ? this.introCounter = 0 : this.introCounter++;
             document.querySelector('header').style.backgroundImage = this.introContent.images[this.introCounter];

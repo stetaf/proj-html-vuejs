@@ -237,9 +237,19 @@ var app = new Vue({
     scrolled: false
   },
   methods: {
+    /**
+     * ### scrollUp
+     * Scrolls the window object to X:Y [0:0]
+     */
     scrollUp: function scrollUp() {
       window.scrollTo(0, 0);
     },
+
+    /**
+     * ### getCartItems
+     * Returns the amount of items in the shopping cart
+     * @returns number of cartItems
+     */
     getCartItems: function getCartItems() {
       return this.cartItems;
     }
@@ -247,13 +257,15 @@ var app = new Vue({
   mounted: function mounted() {
     var _this = this;
 
+    // Adds an event listener to catch the scroll action and show/hide the scroll-top button
     window.addEventListener("scroll", function () {
       if (window.scrollY > 400) {
         _this.scrolled = true;
       } else if (window.scrollY < 400) {
         _this.scrolled = false;
       }
-    });
+    }); // Handles the counter for the multiple slider in the website, and changes the header background-image accordingly
+
     var introSlider = setInterval(function () {
       _this.introCounter + 1 > _this.introContent.images.length - 1 ? _this.introCounter = 0 : _this.introCounter++;
       document.querySelector('header').style.backgroundImage = _this.introContent.images[_this.introCounter];
