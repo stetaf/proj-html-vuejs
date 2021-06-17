@@ -127,9 +127,11 @@ header .intro > a {
   margin-top: 35px;
 }
 header .intro .blue_btn {
-  color: white;
+  padding: 22px 48px;
+  letter-spacing: 2px;
 }
 header .intro .blue_btn:hover {
+  color: white;
   border: 3px solid white;
 }
 header .circles {

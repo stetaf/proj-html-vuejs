@@ -79,8 +79,14 @@ header {
 
         &>a { margin-top: 35px; }
 
-        .blue_btn { color: white; }
-        .blue_btn:hover { border: 3px solid white; }
+        .blue_btn { 
+            padding: 22px 48px;
+            letter-spacing: 2px;
+        }
+        .blue_btn:hover { 
+            color: white;
+            border: 3px solid white; 
+        }
     }
     .circles {
         position: absolute;
