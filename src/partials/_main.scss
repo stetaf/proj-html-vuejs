@@ -164,12 +164,12 @@ main {
                 color: $lightblue;
                 cursor: pointer;
             }
-
-            li:nth-child(1) { 
-                color: $lightblue; 
-                border-left: 5px solid $lightblue;
-            }
             li:nth-child(6) { border: unset; }
+
+            .active { 
+                color: $lightblue !important; 
+                border-left: 5px solid $lightblue !important;
+            }
         }
 
         .right { 
