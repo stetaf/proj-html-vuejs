@@ -338,6 +338,9 @@ main {
     
             .buy { 
                 height: 85px; 
+                color: white;
+                letter-spacing: 2px;
+                
                 td:nth-child(2),
                 td:nth-child(3),
                 td:nth-child(4) {
@@ -348,9 +351,7 @@ main {
                     border-left: unset;
                     border-bottom: unset;
                     background: transparent;
-                 }
-    
-                color: white;
+                }
     
                 .blue_btn { 
                     vertical-align: 2px;

@@ -507,6 +507,7 @@ main .prices table tr > td:nth-child(4) {
 main .prices table .buy {
   height: 85px;
   color: white;
+  letter-spacing: 2px;
 }
 main .prices table .buy td:nth-child(2),
 main .prices table .buy td:nth-child(3),
