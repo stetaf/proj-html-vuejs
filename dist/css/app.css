@@ -51,7 +51,7 @@ header {
   background-image: url("../img/course-9-f-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 650px;
+  height: 750px;
   width: 100%;
   position: relative;
   color: white;
@@ -111,7 +111,7 @@ header .intro {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  height: 500px;
 }
 header .intro h1, header .intro p {
   margin-bottom: 20px;
@@ -121,6 +121,7 @@ header .intro h1 {
 }
 header .intro p {
   text-align: center;
+  line-height: 30px;
 }
 header .intro > a {
   margin-top: 35px;
