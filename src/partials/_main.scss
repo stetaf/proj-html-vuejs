@@ -160,6 +160,10 @@ main {
                 border-bottom: 1px solid #eeeeee;
                 list-style: none;
             }
+            li:hover { 
+                color: $lightblue;
+                cursor: pointer;
+            }
 
             li:nth-child(1) { 
                 color: $lightblue; 
