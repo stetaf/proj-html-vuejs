@@ -307,6 +307,8 @@ main {
 
             .price { color: $gray; }
 
+            thead > tr td:nth-child(1) { font-size: 27px; }
+
             thead > tr td:nth-child(3) { border-top: 5px solid $lightblue; }
 
             thead > tr td:nth-child(2),

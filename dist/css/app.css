@@ -468,6 +468,9 @@ main .prices table thead td {
 main .prices table .price {
   color: #595959;
 }
+main .prices table thead > tr td:nth-child(1) {
+  font-size: 27px;
+}
 main .prices table thead > tr td:nth-child(3) {
   border-top: 5px solid #40c4ff;
 }
