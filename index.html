@@ -138,12 +138,12 @@
                 <div class="container">
                     <div class="left">
                         <ul>
-                            <li @click="changePoss(0)"><h4>What We Do</h4></li>
-                            <li @click="changePoss(1)"><h4>Degree Program</h4></li>
-                            <li @click="changePoss(2)"><h4>Career Achievements</h4></li>
-                            <li @click="changePoss(3)"><h4>Personal Management</h4></li>
-                            <li @click="changePoss(4)"><h4>Steps To Success</h4></li>
-                            <li @click="changePoss(5)"><h4>Knowledge Transfer</h4></li>
+                            <li @click="changePoss(0)" :class="poss == 0 ? 'active' : ''"><h4>What We Do</h4></li>
+                            <li @click="changePoss(1)" :class="poss == 1 ? 'active' : ''"><h4>Degree Program</h4></li>
+                            <li @click="changePoss(2)" :class="poss == 2 ? 'active' : ''"><h4>Career Achievements</h4></li>
+                            <li @click="changePoss(3)" :class="poss == 3 ? 'active' : ''"><h4>Personal Management</h4></li>
+                            <li @click="changePoss(4)" :class="poss == 4 ? 'active' : ''"><h4>Steps To Success</h4></li>
+                            <li @click="changePoss(5)" :class="poss == 5 ? 'active' : ''"><h4>Knowledge Transfer</h4></li>
                         </ul>
                     </div>
                     <div class="right">
