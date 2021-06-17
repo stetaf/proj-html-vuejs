@@ -388,8 +388,12 @@ main .courses .course_cards > div h5, main .courses .course_cards > div h6, main
 }
 main .courses .course_cards > div h6 {
   margin-bottom: 15px;
-  color: lightgray;
+  color: #cecece;
   font-size: 13px;
+}
+main .courses .course_cards > div p {
+  color: #959595;
+  line-height: 20px;
 }
 main .courses .course_cards > div .price {
   color: white;
@@ -404,20 +408,21 @@ main .courses .course_cards > div .price {
   justify-content: center;
   align-items: center;
 }
-main .courses .course_cards img {
+main .courses .course_cards > div img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 15px;
 }
-main .courses .course_cards .meta {
+main .courses .course_cards > div .meta {
   color: lightgray;
   text-transform: uppercase;
   padding: 25px 15px;
   font-size: 14px;
+  font-weight: bold;
 }
-main .courses .course_cards .meta span {
+main .courses .course_cards > div .meta span {
   margin-right: 10px;
 }
 main .courses .circles {

@@ -224,9 +224,14 @@ main {
 
                 h6 { 
                     margin-bottom: 15px; 
-                    color: lightgray;
+                    color: #cecece;
                     font-size: 13px;
                 }    
+
+                p { 
+                    color: $gray2;
+                    line-height: 20px;
+                }
 
                 .price { 
                     color: white;
@@ -241,24 +246,24 @@ main {
                     justify-content: center;
                     align-items: center;
                 }
+
+                img { 
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    margin-bottom: 15px;
+                }
+    
+                .meta { 
+                    color: lightgray;
+                    text-transform: uppercase;
+                    padding: 25px 15px;
+                    font-size: 14px;
+                    font-weight: bold;
+
+                    span { margin-right: 10px; }
+                }
             }
-            img { 
-                width: 100%;
-                height: 200px;
-                object-fit: cover;
-                margin-bottom: 15px;
-            }
-
-            .meta { 
-                color: lightgray;
-                text-transform: uppercase;
-                padding: 25px 15px;
-                font-size: 14px;
-
-                span { margin-right: 10px; }
-            }
-
-
         }
 
         .circles { 
