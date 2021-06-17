@@ -138,27 +138,24 @@
                 <div class="container">
                     <div class="left">
                         <ul>
-                            <li><a href="#"><h4>What We Do</h4></a></li>
-                            <li><a href="#"><h4>Degree Program</h4></a></li>
-                            <li><a href="#"><h4>Career Achievements</h4></a></li>
-                            <li><a href="#"><h4>Personal Management</h4></a></li>
-                            <li><a href="#"><h4>Steps To Success</h4></a></li>
-                            <li><a href="#"><h4>Knowledge Transfer</h4></a></li>
+                            <li @click="changePoss(0)"><h4>What We Do</h4></li>
+                            <li @click="changePoss(1)"><h4>Degree Program</h4></li>
+                            <li @click="changePoss(2)"><h4>Career Achievements</h4></li>
+                            <li @click="changePoss(3)"><h4>Personal Management</h4></li>
+                            <li @click="changePoss(4)"><h4>Steps To Success</h4></li>
+                            <li @click="changePoss(5)"><h4>Knowledge Transfer</h4></li>
                         </ul>
                     </div>
                     <div class="right">
-                        <h2>Learning Possibilities</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti sunt at placeat accusamus ipsam suscipit delectus ipsum officiis animi harum hic, eum, voluptatem quisquam consequuntur, reiciendis ex ullam. Eum?</p>
+                        <h2>{{ currPoss.title }}</h2>
+                        <p>{{ currPoss.text }}</p>
                         <ul>
-                            <li><i class="fas fa-check"></i> We enrich lives through learning.</li>
-                            <li><i class="fas fa-check"></i> Maximizing potential through individual attention.</li>
-                            <li><i class="fas fa-check"></i> The trusted name for specialized training</li>
-                            <li>
-                                <i class="fas fa-check"></i> 
-                                People teach. People learn. This is where they connect.
-                            </li>
+                            <li><i class="fas fa-check"></i> {{ currPoss.list[0] }}</li>
+                            <li><i class="fas fa-check"></i> {{ currPoss.list[1] }}</li>
+                            <li><i class="fas fa-check"></i> {{ currPoss.list[2] }}</li>
+                            <li><i class="fas fa-check"></i> {{ currPoss.list[3] }}</li>
                         </ul>
-                        <img src="./dist/img/h12-tabs-icon-1.png" alt="Ruler">
+                        <img :src="currPoss.img" alt="Ruler">
                     </div>
                 </div>
             </section>
