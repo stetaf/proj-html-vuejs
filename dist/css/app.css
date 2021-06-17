@@ -481,10 +481,6 @@ main .prices table td {
 main .prices table td .fa-check {
   color: #40c4ff;
 }
-main .prices table td .blue_btn {
-  vertical-align: 2px;
-  color: white;
-}
 main .prices table tr > td:nth-child(2),
 main .prices table tr > td:nth-child(3),
 main .prices table tr > td:nth-child(4) {
@@ -503,6 +499,15 @@ main .prices table .buy td:nth-child(1) {
   border-left: unset;
   border-bottom: unset;
   background: transparent;
+}
+main .prices table .buy .blue_btn {
+  vertical-align: 2px;
+  color: white;
+}
+main .prices table .buy .blue_btn:hover {
+  border: 3px solid #40c4ff;
+  color: #40c4ff;
+  background: white;
 }
 main .prices table .buy .white_btn {
   padding: 17px 40px;
