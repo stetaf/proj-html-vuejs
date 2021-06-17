@@ -118,6 +118,7 @@ header .intro h1, header .intro p {
 }
 header .intro h1 {
   font-size: 65px;
+  font-weight: 200;
 }
 header .intro p {
   text-align: center;

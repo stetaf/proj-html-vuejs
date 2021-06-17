@@ -70,7 +70,10 @@ header {
         
         h1, p { margin-bottom: 20px; }
 
-        h1 { font-size: 65px; }
+        h1 { 
+            font-size: 65px; 
+            font-weight: 200;
+        }
 
         p { 
             text-align: center; 
